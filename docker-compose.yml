@@ -1,0 +1,13 @@
+services:
+  vocab-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vocab-app
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      - SECRET_KEY=your-32-character-secret-key-here
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
