@@ -13,6 +13,9 @@ export const TopicDetailPage: React.FC = () => {
   const navigate = useNavigate();
   const [topic, setTopic] = useState<Topic | null>(null);
   const [words, setWords] = useState<Word[]>([]);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [searchResults, setSearchResults] = useState<Word[] | null>(null);
+  const [searchBusy, setSearchBusy] = useState(false);
   const [editing, setEditing] = useState<number | null>(null);
   const [editForm, setEditForm] = useState<WordForm>(blank());
   const [addFormOpen, setAddFormOpen] = useState(false);
@@ -29,6 +32,20 @@ export const TopicDetailPage: React.FC = () => {
     } catch (cause) { setError(message(cause)); }
   }, [topicId]);
   useEffect(() => { void load(); }, [load]);
+  const query = searchTerm.trim();
+  useEffect(() => {
+    if (!query) { setSearchResults(null); setSearchBusy(false); return; }
+    let active = true;
+    setSearchBusy(true);
+    const timer = window.setTimeout(() => {
+      void WordApi.searchByTopic(topicId, query)
+        .then(result => { if (active) { setSearchResults(result); setError(''); } })
+        .catch(cause => { if (active) setError(message(cause)); })
+        .finally(() => { if (active) setSearchBusy(false); });
+    }, 300);
+    return () => { active = false; window.clearTimeout(timer); };
+  }, [topicId, query]);
+  const displayedWords = query ? searchResults ?? [] : words;
 
   const startAdding = () => {
     setEditing(null);
@@ -121,7 +138,8 @@ export const TopicDetailPage: React.FC = () => {
     </form>}
 
     {error && <p className="notice error" role="alert">{error}</p>}
-    {!words.length ? <section className="empty-state"><h2>Chủ đề chưa có từ</h2><p>Nhấn “Thêm từ” để mở form nhập một hoặc nhiều từ.</p></section> : <div className="word-list">{words.map((word, index) => <article className="word-row" key={word.id}><span className="word-number">{String(index + 1).padStart(2, '0')}</span><div className="word-content"><div className="word-title"><strong>{word.term}</strong>{word.pos && <span className="word-tag">{word.pos}</span>}{word.ipa && <span className="ipa">/{word.ipa.replace(/^\/(.*)\/$/, '$1')}/</span>}</div><p>{word.meaningVi}</p>{word.example && <small>{word.example}</small>}</div><div className="card-actions"><button className="button subtle" onClick={() => edit(word)}>Sửa</button><button className="button danger" onClick={() => void remove(word)}>Xóa</button></div></article>)}</div>}
+    <div className="lesson-search topic-search"><span aria-hidden="true">⌕</span><input aria-label="Tìm từ trong chủ đề" value={searchTerm} onChange={event => setSearchTerm(event.target.value)} placeholder="Tìm từ, nghĩa hoặc ví dụ trong chủ đề..." />{searchTerm && <button type="button" onClick={() => setSearchTerm('')} aria-label="Xóa nội dung tìm kiếm">×</button>}</div>
+    {!words.length && !query ? <section className="empty-state"><h2>Chủ đề chưa có từ</h2><p>Nhấn “Thêm từ” để mở form nhập một hoặc nhiều từ.</p></section> : searchBusy ? <p className="muted">Đang tìm kiếm…</p> : !displayedWords.length ? <p className="muted">Không tìm thấy từ phù hợp.</p> : <div className="word-list">{displayedWords.map((word, index) => <article className="word-row" key={word.id}><span className="word-number">{String(index + 1).padStart(2, '0')}</span><div className="word-content"><div className="word-title"><strong>{word.term}</strong>{word.pos && <span className="word-tag">{word.pos}</span>}{word.ipa && <span className="ipa">/{word.ipa.replace(/^\/(.*)\/$/, '$1')}/</span>}</div><p>{word.meaningVi}</p>{word.example && <small>{word.example}</small>}</div><div className="card-actions"><button className="button subtle" onClick={() => edit(word)}>Sửa</button><button className="button danger" onClick={() => void remove(word)}>Xóa</button></div></article>)}</div>}
   </div>;
 };
 

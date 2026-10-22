@@ -1,5 +1,7 @@
 import { ApiClient } from './apiClient';
-import { Word } from '../types/vocab';
+import { Topic, Word } from '../types/vocab';
+
+export interface LessonWordSearchResult { topics: Topic[]; words: Word[] }
 
 export class WordApi {
   static async createMany(topicId: number, words: Array<Pick<Word, 'term' | 'meaningVi' | 'pos' | 'ipa' | 'example'>>): Promise<Word[]> {
@@ -12,6 +14,14 @@ export class WordApi {
 
   static async getByLesson(lessonId: number): Promise<Word[]> {
     return ApiClient.get<Word[]>(`/words/by-lesson/${lessonId}`);
+  }
+
+  static async searchByLesson(lessonId: number, query: string): Promise<LessonWordSearchResult> {
+    return ApiClient.get<LessonWordSearchResult>(`/words/search?lessonId=${lessonId}&q=${encodeURIComponent(query)}`);
+  }
+
+  static async searchByTopic(topicId: number, query: string): Promise<Word[]> {
+    return ApiClient.get<Word[]>(`/words/search/by-topic/${topicId}?q=${encodeURIComponent(query)}`);
   }
 
   static async create(word: Partial<Word>): Promise<Word> {

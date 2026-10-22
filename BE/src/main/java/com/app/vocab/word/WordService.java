@@ -1,13 +1,19 @@
 package com.app.vocab.word;
 
 import com.app.vocab.config.AppProperties;
+import com.app.vocab.lesson.LessonRepository;
 import com.app.vocab.topic.Topic;
 import com.app.vocab.topic.TopicRepository;
+import com.app.vocab.topic.TopicDtos;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.text.Normalizer;
+import java.util.Locale;
+import java.util.Set;
+import java.util.stream.Collectors;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -17,13 +23,16 @@ public class WordService {
     private final WordRepository wordRepository;
     private final TopicRepository topicRepository;
     private final AppProperties appProperties;
+    private final LessonRepository lessonRepository;
 
     public WordService(WordRepository wordRepository,
                        TopicRepository topicRepository,
-                       AppProperties appProperties) {
+                       AppProperties appProperties,
+                       LessonRepository lessonRepository) {
         this.wordRepository = wordRepository;
         this.topicRepository = topicRepository;
         this.appProperties = appProperties;
+        this.lessonRepository = lessonRepository;
     }
 
     public List<WordDtos.View> getWordsByTopic(Long topicId) {
@@ -31,8 +40,55 @@ public class WordService {
         return wordRepository.findByTopicIdOrderByOrderIndexAsc(topicId).stream().map(this::toView).toList();
     }
 
+    @Transactional(readOnly = true)
+    public List<WordDtos.View> searchTopic(Long topicId, String query) {
+        if (!topicRepository.existsById(topicId)) throw new EntityNotFoundException("Topic not found: " + topicId);
+        String normalizedQuery = normalizeSearch(query);
+        if (normalizedQuery.isBlank()) return List.of();
+        return wordRepository.findByTopicIdOrderByOrderIndexAsc(topicId).stream()
+            .filter(word -> matchesWord(word, normalizedQuery))
+            .map(this::toView)
+            .toList();
+    }
+
     public List<WordDtos.View> getWordsByLesson(Long lessonId) {
         return wordRepository.findAllByLessonId(lessonId).stream().map(this::toView).toList();
+    }
+
+    @Transactional(readOnly = true)
+    public WordDtos.LessonSearchResult searchLesson(Long lessonId, String query) {
+        if (!lessonRepository.existsById(lessonId)) throw new EntityNotFoundException("Lesson not found: " + lessonId);
+        String normalizedQuery = normalizeSearch(query);
+        if (normalizedQuery.isBlank()) return new WordDtos.LessonSearchResult(List.of(), List.of());
+
+        List<Topic> lessonTopics = topicRepository.findByLessonIdOrderByOrderIndexAsc(lessonId);
+        List<Word> lessonWords = wordRepository.findAllByLessonId(lessonId);
+        Set<Long> matchingTopicIds = lessonTopics.stream()
+            .filter(topic -> normalizeSearch(topic.getTitle()).contains(normalizedQuery))
+            .map(Topic::getId)
+            .collect(Collectors.toSet());
+        List<Word> matchingWords = lessonWords.stream()
+            .filter(word -> matchingTopicIds.contains(word.getTopic().getId()) || matchesWord(word, normalizedQuery))
+            .toList();
+        Set<Long> resultTopicIds = matchingWords.stream().map(word -> word.getTopic().getId()).collect(Collectors.toSet());
+        resultTopicIds.addAll(matchingTopicIds);
+        List<TopicDtos.View> matchingTopics = lessonTopics.stream()
+            .filter(topic -> resultTopicIds.contains(topic.getId()))
+            .map(topic -> new TopicDtos.View(topic.getId(), topic.getLesson().getId(), topic.getTitle(), topic.getOrderIndex(),
+                (int) wordRepository.countByTopicId(topic.getId())))
+            .toList();
+        return new WordDtos.LessonSearchResult(matchingTopics, matchingWords.stream().map(this::toView).toList());
+    }
+
+    private boolean matchesWord(Word word, String query) {
+        return java.util.stream.Stream.of(word.getTerm(), word.getTermNorm(), word.getPos(), word.getIpa(), word.getMeaningVi(), word.getExample())
+            .filter(value -> value != null).anyMatch(value -> normalizeSearch(value).contains(query));
+    }
+
+    private String normalizeSearch(String value) {
+        if (value == null) return "";
+        return Normalizer.normalize(value.toLowerCase(Locale.ROOT).replace('đ', 'd'), Normalizer.Form.NFD)
+            .replaceAll("\\p{M}+", "").trim();
     }
 
     @Transactional

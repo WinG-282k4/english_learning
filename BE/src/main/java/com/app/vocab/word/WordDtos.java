@@ -1,5 +1,7 @@
 package com.app.vocab.word;
 
+import com.app.vocab.topic.TopicDtos;
+
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.Valid;
@@ -50,4 +52,6 @@ public final class WordDtos {
         @NotNull(message = "Topic ID is required") Long topicId,
         @NotEmpty(message = "At least one word is required") List<@Valid BatchWord> words
     ) {}
+
+    public record LessonSearchResult(List<TopicDtos.View> topics, List<View> words) {}
 }

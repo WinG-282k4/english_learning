@@ -27,6 +27,20 @@ public class WordController {
         return ResponseEntity.ok(wordService.getWordsByLesson(lessonId));
     }
 
+    @GetMapping("/search")
+    public ResponseEntity<WordDtos.LessonSearchResult> searchLesson(
+            @RequestParam Long lessonId,
+            @RequestParam String q) {
+        return ResponseEntity.ok(wordService.searchLesson(lessonId, q));
+    }
+
+    @GetMapping("/search/by-topic/{topicId}")
+    public ResponseEntity<List<WordDtos.View>> searchTopic(
+            @PathVariable Long topicId,
+            @RequestParam String q) {
+        return ResponseEntity.ok(wordService.searchTopic(topicId, q));
+    }
+
     @PostMapping
     public ResponseEntity<WordDtos.View> createWord(@Valid @RequestBody WordDtos.Create request) {
         return ResponseEntity.status(HttpStatus.CREATED).body(wordService.createWord(request));
