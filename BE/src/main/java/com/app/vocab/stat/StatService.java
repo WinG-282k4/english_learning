@@ -15,7 +15,8 @@ public class StatService {
     }
 
     public List<StatDtos.WrongWordView> getFrequentlyWrongWords(int limit) {
-        return wordStatRepository.findTopWrongWords(PageRequest.of(0, limit))
+        int safeLimit = Math.max(1, Math.min(limit, 200));
+        return wordStatRepository.findTopWrongWords(PageRequest.of(0, safeLimit))
                 .stream()
                 .map(ws -> new StatDtos.WrongWordView(
                         ws.getTermNorm(),
