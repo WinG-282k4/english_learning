@@ -10,11 +10,13 @@ import { TestPage } from './pages/TestPage';
 import { TestSummaryPage } from './pages/TestSummaryPage';
 import { StatsPage } from './pages/StatsPage';
 import { SettingsPage } from './pages/SettingsPage';
+import { PageScrollButtons } from './components/PageScrollButtons';
 
 export const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Navbar />
+      <PageScrollButtons />
       <main className="main-content">
         <Routes>
           <Route path="/" element={<LessonListPage />} />

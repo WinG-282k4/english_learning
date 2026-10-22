@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import { TopicApi } from '../services/topicApi';
 import { WordApi } from '../services/wordApi';
 import { Topic, Word } from '../types/vocab';
+import { SpeechButton } from '../components/SpeechButton';
 
 type WordForm = { term: string; pos: string; ipa: string; meaningVi: string; example: string };
 const blank = (): WordForm => ({ term: '', pos: '', ipa: '', meaningVi: '', example: '' });
@@ -125,7 +126,7 @@ export const TopicDetailPage: React.FC = () => {
 
     {error && <p className="notice error" role="alert">{error}</p>}
     <div className="lesson-search topic-search"><span aria-hidden="true">⌕</span><input aria-label="Tìm từ trong chủ đề" value={searchTerm} onChange={event => setSearchTerm(event.target.value)} placeholder="Tìm từ, nghĩa hoặc ví dụ trong chủ đề..." />{searchTerm && <button type="button" onClick={() => setSearchTerm('')} aria-label="Xóa nội dung tìm kiếm">×</button>}</div>
-    {!words.length && !query ? <section className="empty-state"><h2>Chủ đề chưa có từ</h2><p>Nhấn “Thêm từ” để mở form nhập một hoặc nhiều từ.</p></section> : searchBusy ? <p className="muted">Đang tìm kiếm…</p> : !displayedWords.length ? <p className="muted">Không tìm thấy từ phù hợp.</p> : <div className="word-list">{displayedWords.map((word, index) => <article className="word-row" key={word.id}><span className="word-number">{String(index + 1).padStart(2, '0')}</span><div className="word-content"><div className="word-title"><strong>{word.term}</strong>{word.pos && <span className="word-tag">{word.pos}</span>}{word.ipa && <span className="ipa">/{word.ipa.replace(/^\/(.*)\/$/, '$1')}/</span>}</div><p>{word.meaningVi}</p>{word.example && <small>{word.example}</small>}</div><div className="card-actions"><button className="button subtle" onClick={() => edit(word)}>Sửa</button><button className="button danger" onClick={() => void remove(word)}>Xóa</button></div></article>)}</div>}
+    {!words.length && !query ? <section className="empty-state"><h2>Chủ đề chưa có từ</h2><p>Nhấn “Thêm từ” để mở form nhập một hoặc nhiều từ.</p></section> : searchBusy ? <p className="muted">Đang tìm kiếm…</p> : !displayedWords.length ? <p className="muted">Không tìm thấy từ phù hợp.</p> : <div className="word-list">{displayedWords.map((word, index) => <article className="word-row" key={word.id}><span className="word-number">{String(index + 1).padStart(2, '0')}</span><div className="word-content"><div className="word-title"><strong>{word.term}</strong><SpeechButton term={word.term} />{word.pos && <span className="word-tag">{word.pos}</span>}{word.ipa && <span className="ipa">/{word.ipa.replace(/^\/(.*)\/$/, '$1')}/</span>}</div><p>{word.meaningVi}</p>{word.example && <small>{word.example}</small>}</div><div className="card-actions"><button className="button subtle" onClick={() => edit(word)}>Sửa</button><button className="button danger" onClick={() => void remove(word)}>Xóa</button></div></article>)}</div>}
 
     <div className="topic-add-actions"><button className="button primary" onClick={startAdding} disabled={busy}>+ Thêm từ</button></div>
     {addFormOpen && <form className="editor-card" onSubmit={saveNewWords}>
