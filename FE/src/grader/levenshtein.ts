@@ -1,20 +1,27 @@
-/**
- * Levenshtein distance calculation for fuzzy matching.
- */
+/** Levenshtein distance calculation for short-answer typo tolerance. */
 export class LevenshteinCalculator {
-  /**
-   * Calculates Levenshtein distance between two strings.
-   */
-  static distance(_a: string, _b: string): number {
-    // TODO: implement Levenshtein distance algorithm
-    return 0;
+  static distance(a: string, b: string): number {
+    if (a === b) return 0;
+    if (!a.length) return b.length;
+    if (!b.length) return a.length;
+    let previous = Array.from({ length: b.length + 1 }, (_, index) => index);
+    for (let i = 1; i <= a.length; i++) {
+      const current = new Array<number>(b.length + 1);
+      current[0] = i;
+      for (let j = 1; j <= b.length; j++) {
+        current[j] = Math.min(current[j - 1] + 1, previous[j] + 1,
+          previous[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      }
+      previous = current;
+    }
+    return previous[b.length];
   }
 
-  /**
-   * Checks if candidate is within distance <= 1 for terms longer than 5 chars.
-   */
-  static isMatch(_target: string, _candidate: string, _maxDistance: number = 1, _minLength: number = 5): boolean {
-    // TODO: implement fuzzy match check
-    return false;
+  static isMatch(target: string, candidate: string, maxDistance = 1, minLength = 5): boolean {
+    const expected = target.trim().toLowerCase();
+    const actual = candidate.trim().toLowerCase();
+    if (expected.length <= minLength || actual.length <= minLength) return false;
+    if (Math.abs(expected.length - actual.length) > maxDistance) return false;
+    return LevenshteinCalculator.distance(expected, actual) <= maxDistance;
   }
 }

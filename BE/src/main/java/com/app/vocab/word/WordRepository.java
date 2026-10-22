@@ -12,6 +12,8 @@ import java.util.Optional;
 public interface WordRepository extends JpaRepository<Word, Long> {
     List<Word> findByTopicIdOrderByOrderIndexAsc(Long topicId);
 
+    Optional<Word> findFirstByTermNormOrderByIdAsc(String termNorm);
+
     long countByTopicId(Long topicId);
 
     @Query("SELECT MAX(w.orderIndex) FROM Word w WHERE w.topic.id = :topicId")

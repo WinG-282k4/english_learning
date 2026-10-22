@@ -55,3 +55,9 @@ export interface TestSubmitResponse {
   wrongWords: number;
   createdAt: string;
 }
+
+export interface TestSummaryResponse extends TestSubmitResponse {
+  scope: ScopeType;
+  scopeId: number;
+  results: TestResultSubmitItem[];
+}

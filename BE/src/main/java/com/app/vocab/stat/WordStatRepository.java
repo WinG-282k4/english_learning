@@ -14,6 +14,9 @@ public interface WordStatRepository extends JpaRepository<WordStat, String> {
 
     List<WordStat> findByIsActiveWrongTrue();
 
+    @Query("SELECT ws FROM WordStat ws WHERE ws.isActiveWrong = true ORDER BY RAND()")
+    List<WordStat> findRandomActiveWrongWords(Pageable pageable);
+
     @Query("SELECT ws FROM WordStat ws WHERE ws.isActiveWrong = true AND ws.termNorm NOT IN :excludedTerms ORDER BY RAND()")
     List<WordStat> findRandomActiveWrongWords(@Param("excludedTerms") Collection<String> excludedTerms, Pageable pageable);
 

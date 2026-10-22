@@ -1,5 +1,5 @@
 import { ApiClient } from './apiClient';
-import { TestPoolResponse, TestSubmitRequest, TestSubmitResponse } from '../types/test';
+import { TestPoolResponse, TestSubmitRequest, TestSubmitResponse, TestSummaryResponse } from '../types/test';
 
 export class TestApi {
   static async getTopicTestPool(topicId: number): Promise<TestPoolResponse> {
@@ -12,5 +12,9 @@ export class TestApi {
 
   static async submitTest(request: TestSubmitRequest): Promise<TestSubmitResponse> {
     return ApiClient.post<TestSubmitResponse>('/tests/submit', request);
+  }
+
+  static async getSummary(sessionId: number): Promise<TestSummaryResponse> {
+    return ApiClient.get<TestSummaryResponse>(`/tests/${sessionId}`);
   }
 }

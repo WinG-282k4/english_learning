@@ -19,9 +19,22 @@ public class StatUpdater {
      * @param eventTime        Timestamp of the event
      */
     public void applyAnswer(WordStat stat, boolean isCorrect, int resolveThreshold, Instant eventTime) {
-        // TODO: implement state transition rules:
-        // - Wrong: wrong_count++, is_active_wrong = true, correct_since_wrong = 0, last_wrong_at = eventTime
-        // - Correct and active wrong: correct_since_wrong++, if reaches threshold -> is_active_wrong = false, correct_count++
-        // - Correct and not active wrong: correct_count++
+        if (!isCorrect) {
+            stat.setWrongCount(stat.getWrongCount() + 1);
+            stat.setActiveWrong(true);
+            stat.setCorrectSinceWrong(0);
+            stat.setLastWrongAt(eventTime);
+            return;
+        }
+
+        stat.setCorrectCount(stat.getCorrectCount() + 1);
+        if (stat.isActiveWrong()) {
+            int correctSinceWrong = stat.getCorrectSinceWrong() + 1;
+            stat.setCorrectSinceWrong(correctSinceWrong);
+            if (correctSinceWrong >= Math.max(1, resolveThreshold)) {
+                stat.setActiveWrong(false);
+                stat.setCorrectSinceWrong(0);
+            }
+        }
     }
 }

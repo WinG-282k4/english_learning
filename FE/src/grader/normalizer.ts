@@ -1,29 +1,14 @@
-/**
- * Normalization utilities for text comparison in grading.
- */
-
+/** Text normalization used by the two local grading rounds. */
 export class TextNormalizer {
-  /**
-   * Normalizes text: lowercase, trim, remove punctuation.
-   */
   static normalize(text: string): string {
-    // TODO: implement normalization (lowercase, trim, punctuation removal)
-    return text.trim().toLowerCase();
+    return text.toLocaleLowerCase().trim().replace(/[^\p{L}\p{N}\s]/gu, ' ').replace(/\s+/g, ' ').trim();
   }
 
-  /**
-   * Removes Vietnamese diacritics via NFD, handles special 'đ' -> 'd'.
-   */
   static removeAccents(text: string): string {
-    // TODO: implement NFD diacritics removal and 'đ' -> 'd' replacement
-    return text;
+    return text.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
   }
 
-  /**
-   * Splits meaning string (e.g. "chạy; vận hành") into individual normalized meanings.
-   */
-  static parseMeanings(_meaningVi: string): string[] {
-    // TODO: split by ';' or ',' and normalize each meaning
-    return [];
+  static parseMeanings(meaningVi: string): string[] {
+    return meaningVi.split(/[;,，、]/).map(TextNormalizer.normalize).filter(Boolean);
   }
 }

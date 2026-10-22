@@ -28,4 +28,9 @@ public class TestController {
     public ResponseEntity<TestDtos.SubmitResponse> submitTest(@Valid @RequestBody TestDtos.SubmitRequest request) {
         return ResponseEntity.ok(testService.submitTest(request));
     }
+
+    @GetMapping("/tests/{id}")
+    public ResponseEntity<TestDtos.SummaryResponse> getTestSummary(@PathVariable Long id) {
+        return ResponseEntity.ok(testService.getTestSummary(id));
+    }
 }

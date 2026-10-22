@@ -6,16 +6,17 @@
 
 Đã có giao diện và API CRUD cho bài học, chủ đề và từ vựng. Quan hệ dữ liệu là **Lesson → Topic → Word**; “world” trong yêu cầu giao diện được hiểu là “word”. Khi xóa bài học/chủ đề, backend xóa cả dữ liệu con. Khi thêm từ vào chủ đề đã đủ 12 từ, backend tạo chủ đề tiếp nối và lưu từ vào đó.
 
-Các màn hình học flashcard, kiểm tra, thống kê và cài đặt hiện vẫn là khung giao diện hoặc đang triển khai. Một số service tương ứng trong backend cũng còn TODO.
+Đã triển khai học flashcard và kiểm tra hai lượt theo bài học hoặc chủ đề. Thống kê tổng hợp và giao diện cài đặt AI vẫn đang hoàn thiện; một số service AI còn TODO.
 
 ## Nghiệp vụ và quy tắc dự kiến
 
 - Một bài học có nhiều chủ đề; một chủ đề có nhiều từ. Bài học tổng hợp từ các chủ đề qua truy vấn, không nhân bản từ.
 - Một chủ đề tối đa 12 từ. JSON import từ chối topic vượt quá giới hạn này.
 - Từ trùng giữa các chủ đề được cho phép. Thống kê từ sai dùng `term_norm` (chữ thường, bỏ khoảng trắng đầu/cuối), không phụ thuộc `word_id`.
-- Bộ từ kiểm tra chủ đề dự kiến gồm toàn bộ từ hiện tại, từ sai của tối đa 3 chủ đề liền trước và 3 từ sai ngẫu nhiên trong quá khứ; loại trùng theo `term_norm`.
-- Bài kiểm tra bài học dự kiến lấy toàn bộ từ trong bài và 3 từ sai ngẫu nhiên ngoài bài.
-- Bài kiểm tra có hai lượt: Anh → Việt, sau đó Việt → Anh. Frontend dự kiến chấm cục bộ và hiển thị đáp án sau mỗi câu; AI chỉ hỗ trợ chấm lượt Anh → Việt khi chấm cục bộ báo sai.
+- Bộ từ kiểm tra chủ đề gồm toàn bộ từ hiện tại, từ sai thuộc tối đa 3 topic đứng liền trước (3 topic gần nhất theo thứ tự trong lesson; không xét topic cũ hơn) và tối đa 3 từ sai ngẫu nhiên từ lịch sử; loại trùng theo `term_norm`.
+- Bộ từ kiểm tra bài học gồm toàn bộ từ trong bài và tối đa 3 từ sai ngẫu nhiên ngoài bài.
+- Bài kiểm tra có hai lượt: Anh → Việt, sau đó Việt → Anh. Ứng dụng chấm cục bộ và hiện phản hồi sau mỗi câu; AI chỉ được gọi khi câu trả lời lượt Anh → Việt chưa khớp. Nếu AI chưa cấu hình hoặc không khả dụng, câu trả lời được chấm theo các nghĩa đã nhập và người học có thể xác nhận lại.
+- Kết quả hai lượt được lưu trong phiên kiểm tra; điểm là phần trăm câu đúng trên tổng số câu của cả hai lượt. Một từ được tính là đúng hoàn toàn khi đúng ở cả hai lượt.
 - Từ đang sai được gỡ khỏi danh sách sai sau 3 câu đúng tích lũy. Nếu sai lại, bộ đếm đúng quay về 0.
 - Các ngưỡng 12 / 3 / 3 / 3 được cấu hình trong `app.rules` ở `application.yml`.
 - JSON import hỗ trợ tạo bài học mới hoặc thêm topic và từ vào bài học đã chọn; dữ liệu được ghi trong một giao dịch.
@@ -135,4 +136,4 @@ Frontend build tạo `FE/dist`; Maven tạo JAR trong `BE/target`. Dockerfile t�
 
 ## Giới hạn hiện tại
 
-Chưa hoàn thiện luồng flashcard, bài kiểm tra hai lượt, cập nhật thống kê từ sai, lưu/quản lý API key và gọi Gemini/Groq. Các mục này chưa sẵn sàng chỉ vì endpoint hoặc khung trang đã tồn tại.
+Trang thống kê tổng hợp, giao diện lưu/quản lý API key và tích hợp gọi Gemini/Groq chưa hoàn thiện; vì vậy AI chấm câu trả lời hiện trả về không khả dụng. Bài kiểm tra vẫn chạy với bộ chấm cục bộ và cho phép người học xác nhận đáp án.
