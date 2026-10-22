@@ -107,7 +107,7 @@ export const TopicDetailPage: React.FC = () => {
     <Link className="back-link" to={topic ? `/lessons/${topic.lessonId}` : '/'}>← {topic ? 'Quay lại bài học' : 'Tất cả bài học'}</Link>
     <header className="page-header">
       <div><p className="eyebrow">CHỦ ĐỀ</p><h1>{topic?.title ?? `Chủ đề #${id}`}</h1><p className="muted">{words.length} / 12 từ vựng</p></div>
-      <div className="header-actions"><Link className="button" to={`/study/topic/${id}`}>Học</Link><Link className="button" to={`/test/topic/${id}`}>Kiểm tra</Link><button className="button primary" onClick={startAdding} disabled={remaining === 0 || busy}>+ Thêm từ</button></div>
+      <div className="header-actions"><Link className="button" to={`/study/topic/${id}`}>Học</Link><Link className="button" to={`/test/topic/${id}`}>Kiểm tra</Link></div>
     </header>
 
     {editing !== null && <form className="editor-card" onSubmit={saveEdit}>
@@ -122,6 +122,13 @@ export const TopicDetailPage: React.FC = () => {
       <div className="form-footer"><span className="muted">Đang sửa từ đã có</span><button className="button primary" disabled={busy}>{busy ? 'Đang lưu…' : 'Lưu từ'}</button></div>
     </form>}
 
+
+
+    {error && <p className="notice error" role="alert">{error}</p>}
+    <div className="lesson-search topic-search"><span aria-hidden="true">⌕</span><input aria-label="Tìm từ trong chủ đề" value={searchTerm} onChange={event => setSearchTerm(event.target.value)} placeholder="Tìm từ, nghĩa hoặc ví dụ trong chủ đề..." />{searchTerm && <button type="button" onClick={() => setSearchTerm('')} aria-label="Xóa nội dung tìm kiếm">×</button>}</div>
+    {!words.length && !query ? <section className="empty-state"><h2>Chủ đề chưa có từ</h2><p>Nhấn “Thêm từ” để mở form nhập một hoặc nhiều từ.</p></section> : searchBusy ? <p className="muted">Đang tìm kiếm…</p> : !displayedWords.length ? <p className="muted">Không tìm thấy từ phù hợp.</p> : <div className="word-list">{displayedWords.map((word, index) => <article className="word-row" key={word.id}><span className="word-number">{String(index + 1).padStart(2, '0')}</span><div className="word-content"><div className="word-title"><strong>{word.term}</strong>{word.pos && <span className="word-tag">{word.pos}</span>}{word.ipa && <span className="ipa">/{word.ipa.replace(/^\/(.*)\/$/, '$1')}/</span>}</div><p>{word.meaningVi}</p>{word.example && <small>{word.example}</small>}</div><div className="card-actions"><button className="button subtle" onClick={() => edit(word)}>Sửa</button><button className="button danger" onClick={() => void remove(word)}>Xóa</button></div></article>)}</div>}
+
+    <div className="topic-add-actions"><button className="button primary" onClick={startAdding} disabled={remaining === 0 || busy}>+ Thêm từ</button></div>
     {addFormOpen && <form className="editor-card" onSubmit={saveNewWords}>
       <div className="editor-heading"><div><h2>Thêm nhiều từ</h2><p className="muted">Nhập các từ cần thêm rồi lưu cùng lúc. Còn chỗ cho {remaining} từ.</p></div><button type="button" className="button" onClick={() => { setAddFormOpen(false); setNewWords([]); }}>Đóng</button></div>
       {newWords.map((word, index) => <section className="batch-word-card" key={index}>
@@ -136,10 +143,6 @@ export const TopicDetailPage: React.FC = () => {
       </section>)}
       <div className="form-footer"><button type="button" className="button" onClick={() => setNewWords(current => [...current, blank()])} disabled={newWords.length >= remaining}>+ Thêm dòng từ</button><button type="submit" className="button primary" disabled={busy || newWords.length === 0}>{busy ? 'Đang lưu…' : `Lưu ${newWords.length} từ`}</button></div>
     </form>}
-
-    {error && <p className="notice error" role="alert">{error}</p>}
-    <div className="lesson-search topic-search"><span aria-hidden="true">⌕</span><input aria-label="Tìm từ trong chủ đề" value={searchTerm} onChange={event => setSearchTerm(event.target.value)} placeholder="Tìm từ, nghĩa hoặc ví dụ trong chủ đề..." />{searchTerm && <button type="button" onClick={() => setSearchTerm('')} aria-label="Xóa nội dung tìm kiếm">×</button>}</div>
-    {!words.length && !query ? <section className="empty-state"><h2>Chủ đề chưa có từ</h2><p>Nhấn “Thêm từ” để mở form nhập một hoặc nhiều từ.</p></section> : searchBusy ? <p className="muted">Đang tìm kiếm…</p> : !displayedWords.length ? <p className="muted">Không tìm thấy từ phù hợp.</p> : <div className="word-list">{displayedWords.map((word, index) => <article className="word-row" key={word.id}><span className="word-number">{String(index + 1).padStart(2, '0')}</span><div className="word-content"><div className="word-title"><strong>{word.term}</strong>{word.pos && <span className="word-tag">{word.pos}</span>}{word.ipa && <span className="ipa">/{word.ipa.replace(/^\/(.*)\/$/, '$1')}/</span>}</div><p>{word.meaningVi}</p>{word.example && <small>{word.example}</small>}</div><div className="card-actions"><button className="button subtle" onClick={() => edit(word)}>Sửa</button><button className="button danger" onClick={() => void remove(word)}>Xóa</button></div></article>)}</div>}
   </div>;
 };
 
