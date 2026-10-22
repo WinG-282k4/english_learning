@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Flashcard } from '../components/Flashcard';
 import { LessonApi } from '../services/lessonApi';
@@ -48,6 +48,14 @@ export const StudyFlashcardPage: React.FC = () => {
     setIndex(nextIndex);
     setFlipped(false);
   };
+  const flipCard = () => {
+    if (!flipped && word && !word.learned) {
+      void WordApi.markLearned(word.id)
+        .then(updated => setWords(current => current.map(item => item.id === updated.id ? updated : item)))
+        .catch(cause => setError(cause instanceof Error ? cause.message : 'Could not save learning progress.'));
+    }
+    setFlipped(value => !value);
+  };
 
   return <div className="page-container study-page">
     <Link className="back-link" to={backHref}>← {type === 'topic' ? 'Quay lại chủ đề' : 'Quay lại bài học'}</Link>
@@ -60,11 +68,11 @@ export const StudyFlashcardPage: React.FC = () => {
     {loading ? <section className="empty-state"><p>Đang tải thẻ học…</p></section> : !error && !words.length ? <section className="empty-state"><h2>Chưa có từ để học</h2><p>Thêm từ vào {type === 'topic' ? 'chủ đề' : 'bài học'} rồi quay lại đây.</p><Link className="button primary" to={backHref}>Quay lại</Link></section> : word && <>
       <div className="study-progress"><span style={{ width: `${((index + 1) / words.length) * 100}%` }} /></div>
       <p className="study-hint">Nhấn vào thẻ để xem nghĩa. Dùng nút phát âm để nghe cách đọc.</p>
-      <Flashcard word={word} isFlipped={flipped} onFlip={() => setFlipped(value => !value)} />
+      <Flashcard word={word} isFlipped={flipped} onFlip={flipCard} />
       <nav className="study-controls" aria-label="Điều khiển thẻ học">
         <button className="button" onClick={() => move(index - 1)} disabled={index === 0}>← Trước</button>
-        <button className="button study-flip-button" onClick={() => setFlipped(value => !value)}>{flipped ? 'Xem từ' : 'Lật thẻ'}</button>
-        <button className="button primary" onClick={() => move(index + 1)} disabled={index === words.length - 1}>Tiếp →</button>
+        <button className="button study-flip-button" onClick={flipCard}>{flipped ? 'Xem từ' : 'Lật thẻ'}</button>
+        {index === words.length - 1 ? <Link className="button primary" to={backHref}>Hoàn thành</Link> : <button className="button primary" onClick={() => move(index + 1)}>Tiếp →</button>}
       </nav>
       {index === words.length - 1 && <p className="study-finished">Bạn đã đến thẻ cuối cùng. Có thể xem lại các thẻ bằng nút “Trước”.</p>}
     </>}

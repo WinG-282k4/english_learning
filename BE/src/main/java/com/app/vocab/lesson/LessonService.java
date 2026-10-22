@@ -2,6 +2,8 @@ package com.app.vocab.lesson;
 
 import com.app.vocab.topic.TopicRepository;
 import com.app.vocab.word.WordRepository;
+import com.app.vocab.test.ScopeType;
+import com.app.vocab.test.TestSessionRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.stereotype.Service;
@@ -14,11 +16,14 @@ public class LessonService {
     private final LessonRepository lessonRepository;
     private final TopicRepository topicRepository;
     private final WordRepository wordRepository;
+    private final TestSessionRepository testSessionRepository;
 
-    public LessonService(LessonRepository lessonRepository, TopicRepository topicRepository, WordRepository wordRepository) {
+    public LessonService(LessonRepository lessonRepository, TopicRepository topicRepository, WordRepository wordRepository,
+                         TestSessionRepository testSessionRepository) {
         this.lessonRepository = lessonRepository;
         this.topicRepository = topicRepository;
         this.wordRepository = wordRepository;
+        this.testSessionRepository = testSessionRepository;
     }
 
     public List<LessonDtos.View> getAllLessons() {
@@ -52,8 +57,12 @@ public class LessonService {
     }
 
     private LessonDtos.View toView(Lesson lesson) {
+        var latestTest = testSessionRepository.findFirstByScopeAndScopeIdOrderByCreatedAtDesc(ScopeType.LESSON, lesson.getId());
         return new LessonDtos.View(lesson.getId(), lesson.getTitle(), lesson.getCreatedAt(),
                 (int) topicRepository.countByLessonId(lesson.getId()),
-                (int) wordRepository.countByTopicLessonId(lesson.getId()));
+                (int) wordRepository.countByTopicLessonId(lesson.getId()),
+                (int) wordRepository.countByTopicLessonIdAndLearnedTrue(lesson.getId()),
+                latestTest.map(session -> session.getScore()).orElse(null),
+                latestTest.map(session -> session.getCreatedAt()).orElse(null));
     }
 }

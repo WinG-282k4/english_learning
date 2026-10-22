@@ -65,7 +65,7 @@ public class LessonJsonImportService {
             }
         }
         return new LessonDtos.View(lesson.getId(), lesson.getTitle(), lesson.getCreatedAt(), (int) topicRepository.countByLessonId(lesson.getId()),
-            (int) wordRepository.countByTopicLessonId(lesson.getId()));
+            (int) wordRepository.countByTopicLessonId(lesson.getId()), (int) wordRepository.countByTopicLessonIdAndLearnedTrue(lesson.getId()), null, null);
     }
 
     private void validate(LessonJsonImportDtos.LessonFile data, boolean requireTitle) {

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { LearningProgress } from '../components/LearningProgress';
 import { Link } from 'react-router-dom';
 import { LessonApi } from '../services/lessonApi';
 import { Lesson } from '../types/vocab';
@@ -25,7 +26,7 @@ export const LessonListPage: React.FC = () => {
     <header className="page-header"><div><p className="eyebrow">THƯ VIỆN CỦA BẠN</p><h1>Bài học</h1><p className="muted">Sắp xếp từ vựng theo bài học và chủ đề.</p></div><Link className="button primary" to="/lessons/new">+ Thêm bài học</Link></header>
     {editing !== null && <form className="editor-card inline-form" onSubmit={save}><label htmlFor="lesson-title">Đổi tên bài học</label><div className="form-row"><input id="lesson-title" value={title} onChange={e => setTitle(e.target.value)} maxLength={120} required/><button className="button primary" disabled={busy}>{busy ? 'Đang lưu…' : 'Lưu thay đổi'}</button><button type="button" className="button" onClick={() => {setEditing(null);setTitle('');}}>Hủy</button></div></form>}
     {error && <p className="notice error" role="alert">{error}</p>}
-    {lessons.length === 0 ? <section className="empty-state"><h2>Chưa có bài học</h2><p>Tạo bài học đầu tiên để bắt đầu thêm chủ đề và từ vựng.</p></section> : <div className="card-grid">{lessons.map(lesson => <article className="lesson-card" key={lesson.id}><Link className="card-main" to={`/lessons/${lesson.id}`}><span className="card-icon">▤</span><h2>{lesson.title}</h2><p>{lesson.topicCount} chủ đề <span>·</span> {lesson.totalWords} từ</p></Link><div className="card-actions"><button className="button subtle" onClick={() => {setEditing(lesson.id);setTitle(lesson.title);window.scrollTo({top:0,behavior:'smooth'});}}>Sửa</button><button className="button danger" onClick={() => void remove(lesson)}>Xóa</button></div></article>)}</div>}
+    {lessons.length === 0 ? <section className="empty-state"><h2>Chưa có bài học</h2><p>Tạo bài học đầu tiên để bắt đầu thêm chủ đề và từ vựng.</p></section> : <div className="card-grid">{lessons.map(lesson => <article className="lesson-card" key={lesson.id}><Link className="card-main" to={`/lessons/${lesson.id}`}><span className="card-icon">▤</span><h2>{lesson.title}</h2><p>{lesson.topicCount} chủ đề <span>·</span> {lesson.totalWords} từ</p><LearningProgress learned={lesson.learnedWords} total={lesson.totalWords} latestTestScore={lesson.latestTestScore} latestTestAt={lesson.latestTestAt} /></Link><div className="card-actions"><button className="button subtle" onClick={() => {setEditing(lesson.id);setTitle(lesson.title);window.scrollTo({top:0,behavior:'smooth'});}}>Sửa</button><button className="button danger" onClick={() => void remove(lesson)}>Xóa</button></div></article>)}</div>}
   </div>;
 };
 

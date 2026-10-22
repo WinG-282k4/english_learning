@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { LessonApi } from '../services/lessonApi';
-import { LessonImportPayload, LessonImportTopic, LessonImportWord } from '../types/vocab';
+import { LessonImportTopic, LessonImportWord } from '../types/vocab';
 import { parseLessonJson } from '../utils/lessonJson';
 
 const emptyWord = (): LessonImportWord => ({ term: '', pos: '', ipa: '', meaningVi: '', example: '' });

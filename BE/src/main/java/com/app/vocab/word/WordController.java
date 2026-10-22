@@ -56,6 +56,11 @@ public class WordController {
         return ResponseEntity.ok(wordService.updateWord(id, request));
     }
 
+    @PatchMapping("/{id}/learned")
+    public ResponseEntity<WordDtos.View> markLearned(@PathVariable Long id) {
+        return ResponseEntity.ok(wordService.markLearned(id));
+    }
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteWord(@PathVariable Long id) {
         wordService.deleteWord(id);

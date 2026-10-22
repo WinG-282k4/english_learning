@@ -6,6 +6,7 @@ import { GradeResult } from '../grader/types';
 import { LessonApi } from '../services/lessonApi';
 import { TestApi } from '../services/testApi';
 import { TopicApi } from '../services/topicApi';
+import { WordApi } from '../services/wordApi';
 import { PoolWord, RoundResult, ScopeType, TestPoolResponse, TestResultSubmitItem } from '../types/test';
 
 type SavedAnswers = Record<string, { r1?: RoundResult; r2?: RoundResult }>;
@@ -45,6 +46,11 @@ export const TestPage: React.FC = () => {
   const scopeType: ScopeType = type === 'lesson' ? 'LESSON' : 'TOPIC';
   const backHref = type === 'lesson' ? `/lessons/${id}` : `/topics/${id}`;
 
+  const markCurrentWordLearned = () => {
+    if (!currentWord?.wordId) return;
+    void WordApi.markLearned(currentWord.wordId).catch(cause => setError(errorMessage(cause)));
+  };
+
   const submitAnswer = async (event: FormEvent) => {
     event.preventDefault();
     if (!currentWord || !answer.trim() || grading) return;
@@ -60,6 +66,7 @@ export const TestPage: React.FC = () => {
         enableFuzzy: round === 2,
         enableAi: round === 1,
       });
+      if (result.correct) markCurrentWordLearned();
       setFeedback(result);
       setAnswers(previous => ({
         ...previous,
@@ -102,6 +109,17 @@ export const TestPage: React.FC = () => {
     finally { setSaving(false); }
   };
 
+  useEffect(() => {
+    if (!feedback) return;
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== 'Enter' || event.repeat || saving) return;
+      event.preventDefault();
+      void continueTest();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [feedback, saving, continueTest]);
+
   const prompt = currentWord && round === 1 ? currentWord.term : currentWord?.meaningVi;
   const expected = currentWord && round === 1 ? currentWord.meaningVi : currentWord?.term;
 
@@ -126,7 +144,7 @@ export const TestPage: React.FC = () => {
       </form> : <section className={`test-feedback ${feedback.correct ? 'correct' : 'incorrect'}`} aria-live="polite">
         <h2>{feedback.correct ? 'Chính xác!' : 'Chưa chính xác'}</h2>
         <p>Câu trả lời của bạn: <strong>{answer}</strong></p>
-        {!feedback.correct && <p>Đáp án: <strong>{expected}</strong></p>}
+        {(!feedback.correct || feedback.gradedBy === 'FUZZY') && <p>Đáp án đúng: <strong>{expected}</strong></p>}
         {feedback.note && <p className="muted">{feedback.note}</p>}
         <p className="test-grader-label">Chấm bởi: {graderLabel(feedback.gradedBy)}</p>
         {!feedback.correct && <button className="button" type="button" onClick={markCorrect}>Tôi đúng</button>}

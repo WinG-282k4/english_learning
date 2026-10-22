@@ -16,10 +16,14 @@ public interface WordRepository extends JpaRepository<Word, Long> {
 
     long countByTopicId(Long topicId);
 
+    long countByTopicIdAndLearnedTrue(Long topicId);
+
     @Query("SELECT MAX(w.orderIndex) FROM Word w WHERE w.topic.id = :topicId")
     Optional<Integer> findMaxOrderIndexByTopicId(@Param("topicId") Long topicId);
 
     long countByTopicLessonId(Long lessonId);
+
+    long countByTopicLessonIdAndLearnedTrue(Long lessonId);
 
     void deleteByTopicId(Long topicId);
 

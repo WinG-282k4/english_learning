@@ -4,6 +4,8 @@ import com.app.vocab.lesson.LessonRepository;
 import com.app.vocab.topic.Topic;
 import com.app.vocab.topic.TopicRepository;
 import com.app.vocab.topic.TopicDtos;
+import com.app.vocab.test.ScopeType;
+import com.app.vocab.test.TestSessionRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.stereotype.Service;
@@ -20,13 +22,16 @@ public class WordService {
     private final WordRepository wordRepository;
     private final TopicRepository topicRepository;
     private final LessonRepository lessonRepository;
+    private final TestSessionRepository testSessionRepository;
 
     public WordService(WordRepository wordRepository,
                        TopicRepository topicRepository,
-                       LessonRepository lessonRepository) {
+                       LessonRepository lessonRepository,
+                       TestSessionRepository testSessionRepository) {
         this.wordRepository = wordRepository;
         this.topicRepository = topicRepository;
         this.lessonRepository = lessonRepository;
+        this.testSessionRepository = testSessionRepository;
     }
 
     public List<WordDtos.View> getWordsByTopic(Long topicId) {
@@ -68,8 +73,13 @@ public class WordService {
         resultTopicIds.addAll(matchingTopicIds);
         List<TopicDtos.View> matchingTopics = lessonTopics.stream()
             .filter(topic -> resultTopicIds.contains(topic.getId()))
-            .map(topic -> new TopicDtos.View(topic.getId(), topic.getLesson().getId(), topic.getTitle(), topic.getOrderIndex(),
-                (int) wordRepository.countByTopicId(topic.getId())))
+            .map(topic -> {
+                var latestTest = testSessionRepository.findFirstByScopeAndScopeIdOrderByCreatedAtDesc(ScopeType.TOPIC, topic.getId());
+                return new TopicDtos.View(topic.getId(), topic.getLesson().getId(), topic.getTitle(), topic.getOrderIndex(),
+                    (int) wordRepository.countByTopicId(topic.getId()), (int) wordRepository.countByTopicIdAndLearnedTrue(topic.getId()),
+                    latestTest.map(session -> session.getScore()).orElse(null),
+                    latestTest.map(session -> session.getCreatedAt()).orElse(null));
+            })
             .toList();
         return new WordDtos.LessonSearchResult(matchingTopics, matchingWords.stream().map(this::toView).toList());
     }
@@ -116,6 +126,13 @@ public class WordService {
         return toView(wordRepository.save(word));
     }
 
+    @Transactional
+    public WordDtos.View markLearned(Long id) {
+        Word word = wordRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Word not found: " + id));
+        word.setLearned(true);
+        return toView(wordRepository.save(word));
+    }
+
     public void deleteWord(Long id) {
         if (!wordRepository.existsById(id)) throw new EntityNotFoundException("Word not found: " + id);
         wordRepository.deleteById(id);
@@ -123,5 +140,5 @@ public class WordService {
 
     private String normalize(String value) { return value.trim().toLowerCase(java.util.Locale.ROOT); }
     private String clean(String value) { return value == null || value.isBlank() ? null : value.trim(); }
-    private WordDtos.View toView(Word word) { return new WordDtos.View(word.getId(), word.getTopic().getId(), word.getTerm(), word.getTermNorm(), word.getPos(), word.getIpa(), word.getMeaningVi(), word.getExample(), word.getOrderIndex()); }
+    private WordDtos.View toView(Word word) { return new WordDtos.View(word.getId(), word.getTopic().getId(), word.getTerm(), word.getTermNorm(), word.getPos(), word.getIpa(), word.getMeaningVi(), word.getExample(), word.getOrderIndex(), Boolean.TRUE.equals(word.getLearned())); }
 }

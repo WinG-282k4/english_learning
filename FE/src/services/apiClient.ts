@@ -27,6 +27,16 @@ export class ApiClient {
     return res.json();
   }
 
+  static async patch<T>(endpoint: string, body?: any): Promise<T> {
+    const res = await fetch(`${BASE_URL}${endpoint}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: body ? JSON.stringify(body) : undefined,
+    });
+    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+    return res.json();
+  }
+
   static async delete(endpoint: string): Promise<void> {
     const res = await fetch(`${BASE_URL}${endpoint}`, { method: 'DELETE' });
     if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);

@@ -44,4 +44,7 @@ public class Word {
 
     @Column(name = "order_index", nullable = false)
     private Integer orderIndex;
+
+    @Builder.Default
+    private Boolean learned = false;
 }

@@ -4,6 +4,9 @@ export interface Lesson {
   createdAt: string;
   topicCount: number;
   totalWords: number;
+  learnedWords: number;
+  latestTestScore: number | null;
+  latestTestAt: string | null;
 }
 
 export interface LessonImportWord {
@@ -38,6 +41,9 @@ export interface Topic {
   title: string;
   orderIndex: number;
   wordCount: number;
+  learnedWords: number;
+  latestTestScore: number | null;
+  latestTestAt: string | null;
   words?: Word[];
 }
 
@@ -51,6 +57,7 @@ export interface Word {
   meaningVi: string;
   example?: string;
   orderIndex: number;
+  learned: boolean;
 }
 
 export interface WordStat {

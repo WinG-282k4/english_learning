@@ -11,7 +11,10 @@ public final class LessonDtos {
         String title,
         Instant createdAt,
         int topicCount,
-        int totalWords
+        int totalWords,
+        int learnedWords,
+        Integer latestTestScore,
+        Instant latestTestAt
     ) {}
 
     public record Create(

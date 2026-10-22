@@ -8,6 +8,10 @@ export class WordApi {
     return ApiClient.post<Word[]>('/words/batch', { topicId, words });
   }
 
+  static async markLearned(wordId: number): Promise<Word> {
+    return ApiClient.patch<Word>(`/words/${wordId}/learned`);
+  }
+
   static async getByTopic(topicId: number): Promise<Word[]> {
     return ApiClient.get<Word[]>(`/words?topicId=${topicId}`);
   }

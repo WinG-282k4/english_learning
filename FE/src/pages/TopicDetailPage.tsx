@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import { LearningProgress } from '../components/LearningProgress';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { TopicApi } from '../services/topicApi';
 import { WordApi } from '../services/wordApi';
@@ -106,7 +107,7 @@ export const TopicDetailPage: React.FC = () => {
   return <div className="page-container">
     <Link className="back-link" to={topic ? `/lessons/${topic.lessonId}` : '/'}>← {topic ? 'Quay lại bài học' : 'Tất cả bài học'}</Link>
     <header className="page-header">
-      <div><p className="eyebrow">CHỦ ĐỀ</p><h1>{topic?.title ?? `Chủ đề #${id}`}</h1><p className="muted">{words.length} tu vung</p></div>
+      <div><p className="eyebrow">CHỦ ĐỀ</p><h1>{topic?.title ?? `Chủ đề #${id}`}</h1><p className="muted">{words.length} {'t\u1eeb v\u1ef1ng'}</p><LearningProgress learned={words.filter(word => word.learned).length} total={words.length} latestTestScore={topic?.latestTestScore} latestTestAt={topic?.latestTestAt} /></div>
       <div className="header-actions"><Link className="button" to={`/study/topic/${id}`}>Học</Link><Link className="button" to={`/test/topic/${id}`}>Kiểm tra</Link></div>
     </header>
 
@@ -126,7 +127,7 @@ export const TopicDetailPage: React.FC = () => {
 
     {error && <p className="notice error" role="alert">{error}</p>}
     <div className="lesson-search topic-search"><span aria-hidden="true">⌕</span><input aria-label="Tìm từ trong chủ đề" value={searchTerm} onChange={event => setSearchTerm(event.target.value)} placeholder="Tìm từ, nghĩa hoặc ví dụ trong chủ đề..." />{searchTerm && <button type="button" onClick={() => setSearchTerm('')} aria-label="Xóa nội dung tìm kiếm">×</button>}</div>
-    {!words.length && !query ? <section className="empty-state"><h2>Chủ đề chưa có từ</h2><p>Nhấn “Thêm từ” để mở form nhập một hoặc nhiều từ.</p></section> : searchBusy ? <p className="muted">Đang tìm kiếm…</p> : !displayedWords.length ? <p className="muted">Không tìm thấy từ phù hợp.</p> : <div className="word-list">{displayedWords.map((word, index) => <article className="word-row" key={word.id}><span className="word-number">{String(index + 1).padStart(2, '0')}</span><div className="word-content"><div className="word-title"><strong>{word.term}</strong><SpeechButton term={word.term} />{word.pos && <span className="word-tag">{word.pos}</span>}{word.ipa && <span className="ipa">/{word.ipa.replace(/^\/(.*)\/$/, '$1')}/</span>}</div><p>{word.meaningVi}</p>{word.example && <small>{word.example}</small>}</div><div className="card-actions"><button className="button subtle" onClick={() => edit(word)}>Sửa</button><button className="button danger" onClick={() => void remove(word)}>Xóa</button></div></article>)}</div>}
+    {!words.length && !query ? <section className="empty-state"><h2>Chủ đề chưa có từ</h2><p>Nhấn “Thêm từ” để mở form nhập một hoặc nhiều từ.</p></section> : searchBusy ? <p className="muted">Đang tìm kiếm…</p> : !displayedWords.length ? <p className="muted">Không tìm thấy từ phù hợp.</p> : <div className="word-list">{displayedWords.map((word, index) => <article className="word-row" key={word.id}><span className="word-number">{String(index + 1).padStart(2, '0')}</span><div className="word-content"><div className="word-title"><strong>{word.term}</strong>{word.learned && <span className="learned-check" title="Đã học" aria-label="Đã học">&#10003;</span>}<SpeechButton term={word.term} />{word.pos && <span className="word-tag">{word.pos}</span>}{word.ipa && <span className="ipa">/{word.ipa.replace(/^\/(.*)\/$/, '$1')}/</span>}</div><p>{word.meaningVi}</p>{word.example && <small>{word.example}</small>}</div><div className="card-actions"><button className="button subtle" onClick={() => edit(word)}>Sửa</button><button className="button danger" onClick={() => void remove(word)}>Xóa</button></div></article>)}</div>}
 
     <div className="topic-add-actions"><button className="button primary" onClick={startAdding} disabled={busy}>+ Thêm từ</button></div>
     {addFormOpen && <form className="editor-card" onSubmit={saveNewWords}>

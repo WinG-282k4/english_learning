@@ -20,7 +20,8 @@ public final class WordDtos {
         String ipa,
         String meaningVi,
         String example,
-        Integer orderIndex
+        Integer orderIndex,
+        boolean learned
     ) {}
 
     public record Create(
