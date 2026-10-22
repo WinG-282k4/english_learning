@@ -34,7 +34,6 @@ spring:
 
 app:
   rules:
-    max-words-per-topic: 12
     max-prev-topics: 3
     random-past-wrong-count: 3
     resolve-wrong-threshold: 3

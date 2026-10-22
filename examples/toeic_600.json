@@ -1,0 +1,4455 @@
+{
+  "title": "600 từ vựng TOEIC",
+  "topics": [
+    {
+      "title": "CONTRACTS (HỢP ĐỒNG)",
+      "words": [
+        {
+          "term": "abide by",
+          "pos": "verb",
+          "ipa": "/əˈbaɪd baɪ/",
+          "meaningVi": "tuân thủ, tuân theo",
+          "example": ""
+        },
+        {
+          "term": "agreement",
+          "pos": "noun",
+          "ipa": "/əˈɡriː.mənt/",
+          "meaningVi": "sự thỏa thuận hợp đồng",
+          "example": ""
+        },
+        {
+          "term": "assurance",
+          "pos": "noun, verb",
+          "ipa": "/əˈʃʊr.əns/",
+          "meaningVi": "sự đảm bảo (n); đảm bảo (v)",
+          "example": ""
+        },
+        {
+          "term": "cancellation",
+          "pos": "noun",
+          "ipa": "/ˌkæn.səlˈeɪ.ʃən/",
+          "meaningVi": "sự hủy bỏ, chấm dứt (n)",
+          "example": ""
+        },
+        {
+          "term": "determine",
+          "pos": "verb",
+          "ipa": "/dɪˈtɜːrmɪn/",
+          "meaningVi": "xác định",
+          "example": ""
+        },
+        {
+          "term": "engage",
+          "pos": "verb",
+          "ipa": "/ɪnˈɡeɪdʒ/",
+          "meaningVi": "tham dự",
+          "example": ""
+        },
+        {
+          "term": "establish",
+          "pos": "verb",
+          "ipa": "/ɪˈstæblɪʃ/",
+          "meaningVi": "thành lập, thiết lập",
+          "example": ""
+        },
+        {
+          "term": "obligate",
+          "pos": "verb",
+          "ipa": "/ˈɑːblɪɡeɪt/",
+          "meaningVi": "bắt buộc",
+          "example": ""
+        },
+        {
+          "term": "party",
+          "pos": "noun",
+          "ipa": "/ˈpɑːrti/",
+          "meaningVi": "bên (trong các tổ chức)",
+          "example": ""
+        },
+        {
+          "term": "provision",
+          "pos": "noun",
+          "ipa": "/prəˈvɪʒ.ən/",
+          "meaningVi": "sự cung cấp/ điều khoản",
+          "example": ""
+        },
+        {
+          "term": "resolve",
+          "pos": "verb",
+          "ipa": "/rɪˈzɔːlv/",
+          "meaningVi": "giải quyết, quyết định",
+          "example": ""
+        },
+        {
+          "term": "specific",
+          "pos": "adjective",
+          "ipa": "/spəˈsɪf.ɪk/",
+          "meaningVi": "cụ thể",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "MARKETING (TIẾP THỊ)",
+      "words": [
+        {
+          "term": "attract",
+          "pos": "verb",
+          "ipa": "/əˈtrækt/",
+          "meaningVi": "thu hút, hấp dẫn",
+          "example": ""
+        },
+        {
+          "term": "compare",
+          "pos": "verb",
+          "ipa": "/kəmˈper/",
+          "meaningVi": "so sánh, đối chiếu",
+          "example": ""
+        },
+        {
+          "term": "competition",
+          "pos": "noun",
+          "ipa": "/ˌkɑːm.pəˈtɪʃ.ən/",
+          "meaningVi": "sự cạnh tranh/ cuộc thi",
+          "example": ""
+        },
+        {
+          "term": "consume",
+          "pos": "verb",
+          "ipa": "/kən’sju:m/",
+          "meaningVi": "tiêu thụ, sử dụng",
+          "example": ""
+        },
+        {
+          "term": "convince",
+          "pos": "verb",
+          "ipa": "/kənˈvɪns/",
+          "meaningVi": "thuyết phục",
+          "example": ""
+        },
+        {
+          "term": "inspiration",
+          "pos": "noun",
+          "ipa": "/ˌɪn.spəˈreɪ.ʃən/",
+          "meaningVi": "nguồn cảm hứng",
+          "example": ""
+        },
+        {
+          "term": "market",
+          "pos": "verb, noun",
+          "ipa": "/ˈmɑːrkɪt/",
+          "meaningVi": "buôn bán (v); thị trường (n)",
+          "example": ""
+        },
+        {
+          "term": "persuasion",
+          "pos": "noun",
+          "ipa": "/pəˈsweɪ.ʒən/",
+          "meaningVi": "sự thuyết phục",
+          "example": ""
+        },
+        {
+          "term": "productive",
+          "pos": "adjective",
+          "ipa": "/prəˈdʌk.tɪv/",
+          "meaningVi": "năng suất",
+          "example": ""
+        },
+        {
+          "term": "satisfaction",
+          "pos": "noun",
+          "ipa": "/ˌsæt.ɪsˈfæk.ʃən/",
+          "meaningVi": "sự hài lòng, thỏa mãn",
+          "example": ""
+        },
+        {
+          "term": "currently",
+          "pos": "adverb",
+          "ipa": "/ˈkɝː.ənt.li/",
+          "meaningVi": "hiện thời, hiện nay",
+          "example": ""
+        },
+        {
+          "term": "fad",
+          "pos": "noun",
+          "ipa": "/fæd/",
+          "meaningVi": "mốt nhất thời",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "WARRANTIES (BẢO HÀNH)",
+      "words": [
+        {
+          "term": "characteristic",
+          "pos": "adjective, noun",
+          "ipa": "/ˌker.ək.təˈrɪs.tɪk/",
+          "meaningVi": "đặc thù (adj); đặc trưng, đặc điểm (n)",
+          "example": ""
+        },
+        {
+          "term": "consequence",
+          "pos": "noun",
+          "ipa": "/ˈkɑːnsɪkwens/",
+          "meaningVi": "kết quả, hậu quả",
+          "example": ""
+        },
+        {
+          "term": "cover",
+          "pos": "verb",
+          "ipa": "/ˈkʌvər/",
+          "meaningVi": "che phủ, bao gồm",
+          "example": ""
+        },
+        {
+          "term": "expiration",
+          "pos": "noun",
+          "ipa": "/ˌek.spəˈreɪ.ʃən/",
+          "meaningVi": "sự hết hạn",
+          "example": ""
+        },
+        {
+          "term": "frequently",
+          "pos": "adverb",
+          "ipa": "/ˈfriːkwəntli/",
+          "meaningVi": "thường xuyên",
+          "example": ""
+        },
+        {
+          "term": "imply",
+          "pos": "verb",
+          "ipa": "/ɪmˈplaɪ/",
+          "meaningVi": "ngụ ý, hàm ý",
+          "example": ""
+        },
+        {
+          "term": "promise",
+          "pos": "noun, verb",
+          "ipa": "/ˈprɑːmɪs/",
+          "meaningVi": "lời hứa, sự cam đoan (n); hứa, cam kết (v)",
+          "example": ""
+        },
+        {
+          "term": "reputation",
+          "pos": "noun",
+          "ipa": "/ˌrepjuˈteɪʃn/",
+          "meaningVi": "danh tiếng, thanh danh",
+          "example": ""
+        },
+        {
+          "term": "require",
+          "pos": "verb",
+          "ipa": "/rɪˈkwaɪər/",
+          "meaningVi": "đòi hỏi, yêu cầu",
+          "example": ""
+        },
+        {
+          "term": "variety",
+          "pos": "noun",
+          "ipa": "/vəˈraɪəti/",
+          "meaningVi": "sự đa dạng",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "BUSINESS PLANNING (KẾ HOẠCH KINH DOANH)",
+      "words": [
+        {
+          "term": "address",
+          "pos": "verb, noun",
+          "ipa": "/əˈdres/",
+          "meaningVi": "trình bày, nhấn mạnh (v); bài diễn văn (n)",
+          "example": ""
+        },
+        {
+          "term": "avoid",
+          "pos": "verb",
+          "ipa": "/əˈvɔɪd/",
+          "meaningVi": "phòng tránh, ngăn ngừa",
+          "example": ""
+        },
+        {
+          "term": "demonstrate",
+          "pos": "verb",
+          "ipa": "/ˈdemənstreɪt/",
+          "meaningVi": "chứng minh, giải thích",
+          "example": ""
+        },
+        {
+          "term": "develop",
+          "pos": "verb",
+          "ipa": "/dɪˈveləp/",
+          "meaningVi": "phát triển",
+          "example": ""
+        },
+        {
+          "term": "evaluate",
+          "pos": "verb",
+          "ipa": "/ɪˈvæljueɪt/",
+          "meaningVi": "đánh giá, ước lượng",
+          "example": ""
+        },
+        {
+          "term": "gather",
+          "pos": "verb",
+          "ipa": "/ˈɡæðər/",
+          "meaningVi": "tập hợp, thu thập",
+          "example": ""
+        },
+        {
+          "term": "offer",
+          "pos": "noun, verb",
+          "ipa": "/ˈɔːfər/",
+          "meaningVi": "đề xuất, đề nghị (n,v)",
+          "example": ""
+        },
+        {
+          "term": "primarily",
+          "pos": "adverb",
+          "ipa": "/praɪˈmerəli/",
+          "meaningVi": "ưu tiên, chủ yếu",
+          "example": ""
+        },
+        {
+          "term": "risk",
+          "pos": "noun",
+          "ipa": "/rɪsk/",
+          "meaningVi": "rủi ro, nguy cơ",
+          "example": ""
+        },
+        {
+          "term": "strategy",
+          "pos": "noun",
+          "ipa": "/ˈstrætədʒi/",
+          "meaningVi": "chiến lược",
+          "example": ""
+        },
+        {
+          "term": "strengthen",
+          "pos": "verb",
+          "ipa": "/ˈstreŋθn/",
+          "meaningVi": "làm mạnh, củng cố",
+          "example": ""
+        },
+        {
+          "term": "substitution",
+          "pos": "noun",
+          "ipa": "/ˌsʌb.stəˈtuː.ʃən/",
+          "meaningVi": "sự thay thế (=replacement)",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "CONFERENCES (HỘI NGHỊ)",
+      "words": [
+        {
+          "term": "accommodate",
+          "pos": "verb",
+          "ipa": "/əˈkɑːmədeɪt/",
+          "meaningVi": "cung cấp tiện nghi",
+          "example": ""
+        },
+        {
+          "term": "arrangement",
+          "pos": "noun",
+          "ipa": "/əˈreɪndʒ.mənt/",
+          "meaningVi": "sự sắp xếp, sắp đặt",
+          "example": ""
+        },
+        {
+          "term": "association",
+          "pos": "noun",
+          "ipa": "/əˌsoʊ.siˈeɪ.ʃən/",
+          "meaningVi": "liên hiệp, đoàn thể (= organization)",
+          "example": ""
+        },
+        {
+          "term": "attend",
+          "pos": "verb",
+          "ipa": "/əˈtend/",
+          "meaningVi": "tham gia, tham dự",
+          "example": ""
+        },
+        {
+          "term": "get in touch with somebody",
+          "pos": "verb",
+          "ipa": "",
+          "meaningVi": "liên lạc với ai, kết nối với ai (= connect)",
+          "example": ""
+        },
+        {
+          "term": "hold",
+          "pos": "verb",
+          "ipa": "/həʊld/",
+          "meaningVi": "tiến hành, tổ chức/ chứa, đựng (= contain)",
+          "example": ""
+        },
+        {
+          "term": "location",
+          "pos": "noun",
+          "ipa": "/loʊˈkeɪ.ʃən/",
+          "meaningVi": "vị trí, địa điểm",
+          "example": ""
+        },
+        {
+          "term": "overcrowded",
+          "pos": "adjective",
+          "ipa": "/oʊvərˈkraʊdɪd/",
+          "meaningVi": "quá đông đúc, chật kín",
+          "example": ""
+        },
+        {
+          "term": "register",
+          "pos": "noun, verb",
+          "ipa": "/ˈredʒɪstər/",
+          "meaningVi": "hồ sơ, sổ sách (n); đăng ký (v)",
+          "example": ""
+        },
+        {
+          "term": "select",
+          "pos": "verb",
+          "ipa": "/sɪˈlekt/",
+          "meaningVi": "lựa chọn",
+          "example": ""
+        },
+        {
+          "term": "session",
+          "pos": "noun",
+          "ipa": "/ˈseʃn/",
+          "meaningVi": "phiên họp",
+          "example": ""
+        },
+        {
+          "term": "take part in",
+          "pos": "verb",
+          "ipa": "/teɪk pɑrt ɪn/",
+          "meaningVi": "tham gia vào",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "COMPUTERS (MÁY TÍNH)",
+      "words": [
+        {
+          "term": "access",
+          "pos": "verb, noun",
+          "ipa": "/ˈækses/",
+          "meaningVi": "truy cập (v); quyền truy cập (n)",
+          "example": ""
+        },
+        {
+          "term": "allocate",
+          "pos": "verb",
+          "ipa": "/ˈæləkeɪt/",
+          "meaningVi": "phân phát, cấp cho",
+          "example": ""
+        },
+        {
+          "term": "compatible + with something",
+          "pos": "adjective",
+          "ipa": "/kəmˈpætəbl/",
+          "meaningVi": "tương thích, tương xứng với cái gì",
+          "example": ""
+        },
+        {
+          "term": "delete",
+          "pos": "verb",
+          "ipa": "/dɪˈliːt/",
+          "meaningVi": "xóa (= remove, erase)",
+          "example": ""
+        },
+        {
+          "term": "display",
+          "pos": "noun, verb",
+          "ipa": "/dɪˈspleɪ/",
+          "meaningVi": "sự trưng bày, vật trưng bày (n); trưng bày, hiển thị (v)",
+          "example": ""
+        },
+        {
+          "term": "duplicate",
+          "pos": "verb, noun",
+          "ipa": "/ˈduː.plə.keɪt/",
+          "meaningVi": "sao chép, nhân đôi (v); bản sao (n)",
+          "example": ""
+        },
+        {
+          "term": "failure",
+          "pos": "noun",
+          "ipa": "/ˈfeɪ.ljɚ/",
+          "meaningVi": "sự thất bại",
+          "example": ""
+        },
+        {
+          "term": "figure out",
+          "pos": "verb",
+          "ipa": "/ˈfɪɡjər aʊt/",
+          "meaningVi": "hiểu ra, tìm ra",
+          "example": ""
+        },
+        {
+          "term": "ignore",
+          "pos": "verb",
+          "ipa": "/ɪɡˈnɔːr/",
+          "meaningVi": "phớt lờ",
+          "example": ""
+        },
+        {
+          "term": "search",
+          "pos": "noun, verb",
+          "ipa": "/sɜːrtʃ/",
+          "meaningVi": "sự tìm kiếm, điều tra (n); tìm kiếm (v)",
+          "example": ""
+        },
+        {
+          "term": "shut down",
+          "pos": "verb",
+          "ipa": "/ʃʌt daʊn/",
+          "meaningVi": "tắt",
+          "example": ""
+        },
+        {
+          "term": "warning",
+          "pos": "noun",
+          "ipa": "/ˈwɔːr.nɪŋ/",
+          "meaningVi": "lời cảnh báo, sự cảnh báo",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "OFFICE TECHNOLOGY (CÔNG NGHỆ VĂN PHÒNG)",
+      "words": [
+        {
+          "term": "affordable",
+          "pos": "adjective",
+          "ipa": "/əˈfɔːr.də.bəl/",
+          "meaningVi": "có khả năng chi trả, phải chăng",
+          "example": ""
+        },
+        {
+          "term": "as needed",
+          "pos": "adverb",
+          "ipa": "/æz niːdɪd/",
+          "meaningVi": "khi cần thiết",
+          "example": ""
+        },
+        {
+          "term": "capacity",
+          "pos": "noun",
+          "ipa": "/kəˈpæsəti/",
+          "meaningVi": "sức chứa, dung lượng",
+          "example": ""
+        },
+        {
+          "term": "durable",
+          "pos": "adjective",
+          "ipa": "/ˈdʊrəbl/",
+          "meaningVi": "bền",
+          "example": ""
+        },
+        {
+          "term": "be in charge of",
+          "pos": "verb",
+          "ipa": "/ɪn tʃɑːrdʒ əv/",
+          "meaningVi": "chịu trách nhiệm về",
+          "example": ""
+        },
+        {
+          "term": "initiative",
+          "pos": "noun",
+          "ipa": "/ɪˈnɪʃ.ə.t̬ɪv/",
+          "meaningVi": "sáng kiến",
+          "example": ""
+        },
+        {
+          "term": "physically",
+          "pos": "adverb",
+          "ipa": "/ˈfɪz.ɪ.kəl.i/",
+          "meaningVi": "về mặt thể chất",
+          "example": ""
+        },
+        {
+          "term": "provider",
+          "pos": "noun",
+          "ipa": "/prəˈvaɪ.dɚ/",
+          "meaningVi": "nhà cung cấp (= supplier)",
+          "example": ""
+        },
+        {
+          "term": "recur",
+          "pos": "verb",
+          "ipa": "/rɪˈkɜːr/",
+          "meaningVi": "tái diễn",
+          "example": ""
+        },
+        {
+          "term": "reduction",
+          "pos": "noun",
+          "ipa": "/rɪˈdʌk.ʃən/",
+          "meaningVi": "sự giảm sút",
+          "example": ""
+        },
+        {
+          "term": "stay on top of",
+          "pos": "verb",
+          "ipa": "/steɪ ɔːn tɑːp əv/",
+          "meaningVi": "nắm bắt tình hình",
+          "example": ""
+        },
+        {
+          "term": "stock",
+          "pos": "noun, verb",
+          "ipa": "/stɑːk/",
+          "meaningVi": "hàng tồn kho (n); tích trữ (v)",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "OFFICE PROCEDURES (THỦ TỤC VĂN PHÒNG)",
+      "words": [
+        {
+          "term": "appreciation",
+          "pos": "noun",
+          "ipa": "/əˌpriː.ʃiˈeɪ.ʃən/",
+          "meaningVi": "sự cảm kích, sự ghi nhận",
+          "example": ""
+        },
+        {
+          "term": "bring in",
+          "pos": "verb",
+          "ipa": "/brɪŋ ɪn/",
+          "meaningVi": "tuyển dụng/ làm cho xuất hiện",
+          "example": ""
+        },
+        {
+          "term": "casually",
+          "pos": "adverb",
+          "ipa": "/ˈkæʒ.uː.ə.li/",
+          "meaningVi": "bình thường",
+          "example": ""
+        },
+        {
+          "term": "code",
+          "pos": "noun",
+          "ipa": "/koʊd/",
+          "meaningVi": "quy tắc, luật lệ",
+          "example": ""
+        },
+        {
+          "term": "expose",
+          "pos": "verb",
+          "ipa": "/ɪkˈspoʊz/",
+          "meaningVi": "phơi bày, bộc lộ",
+          "example": ""
+        },
+        {
+          "term": "glimpse",
+          "pos": "verb, noun",
+          "ipa": "/ɡlɪmps/",
+          "meaningVi": "liếc, nhìn thoáng qua (v); cái nhìn thoáng qua (n)",
+          "example": ""
+        },
+        {
+          "term": "be made of",
+          "pos": "verb",
+          "ipa": "/bi meɪd əv/",
+          "meaningVi": "làm bằng (chất liệu); bao gồm (= consist of)",
+          "example": ""
+        },
+        {
+          "term": "out of",
+          "pos": "adjective",
+          "ipa": "/aʊt əv/",
+          "meaningVi": "hết, không còn",
+          "example": ""
+        },
+        {
+          "term": "outdated",
+          "pos": "adjective",
+          "ipa": "/aʊtˈdeɪtɪd/",
+          "meaningVi": "lỗi thời, lạc hậu",
+          "example": ""
+        },
+        {
+          "term": "practice",
+          "pos": "noun, verb",
+          "ipa": "/ˈpræktɪs/",
+          "meaningVi": "luyện tập (v); sự luyện tập (n)",
+          "example": ""
+        },
+        {
+          "term": "reinforce",
+          "pos": "verb",
+          "ipa": "/riːɪnˈfɔːrs/",
+          "meaningVi": "tăng cường, củng cố",
+          "example": ""
+        },
+        {
+          "term": "verbally",
+          "pos": "adverb",
+          "ipa": "/ˈvɝː.bəl.i/",
+          "meaningVi": "bằng lời nói",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "ELECTRONICS (ĐIỆN TỬ)",
+      "words": [
+        {
+          "term": "device",
+          "pos": "noun",
+          "ipa": "/dɪˈvaɪs/",
+          "meaningVi": "thiết bị, máy móc",
+          "example": ""
+        },
+        {
+          "term": "facilitate",
+          "pos": "verb",
+          "ipa": "/fəˈsɪlɪteɪt/",
+          "meaningVi": "tạo điều kiện, làm cho dễ dàng",
+          "example": ""
+        },
+        {
+          "term": "network",
+          "pos": "noun, verb",
+          "ipa": "/ˈnetwɜːrk/",
+          "meaningVi": "mạng lưới (n); kết nối (v)",
+          "example": ""
+        },
+        {
+          "term": "popularity",
+          "pos": "noun",
+          "ipa": "/ˌpɑː.pjəˈler.ə.t̬i/",
+          "meaningVi": "tính phổ biến",
+          "example": ""
+        },
+        {
+          "term": "process",
+          "pos": "noun, verb",
+          "ipa": "/ˈproʊses/",
+          "meaningVi": "quá trình (n); xử lý (v)",
+          "example": ""
+        },
+        {
+          "term": "replace",
+          "pos": "verb",
+          "ipa": "/rɪˈpleɪs/",
+          "meaningVi": "thay thế (= substitute)",
+          "example": ""
+        },
+        {
+          "term": "revolution",
+          "pos": "noun",
+          "ipa": "/ˌrev.əˈluː.ʃən/",
+          "meaningVi": "cuộc cách mạng",
+          "example": ""
+        },
+        {
+          "term": "sharp",
+          "pos": "adjective",
+          "ipa": "/ʃɑːrp/",
+          "meaningVi": "thông minh sắc bén, nhọn",
+          "example": ""
+        },
+        {
+          "term": "skill",
+          "pos": "noun",
+          "ipa": "/skɪl/",
+          "meaningVi": "kỹ năng",
+          "example": ""
+        },
+        {
+          "term": "software",
+          "pos": "noun",
+          "ipa": "/ˈsɔːftwer/",
+          "meaningVi": "phần mềm",
+          "example": ""
+        },
+        {
+          "term": "store",
+          "pos": "verb",
+          "ipa": "/stɔːr/",
+          "meaningVi": "lưu trữ, chứa",
+          "example": ""
+        },
+        {
+          "term": "technical",
+          "pos": "adjective",
+          "ipa": "/ˈteknɪkl/",
+          "meaningVi": "thuộc về kĩ thuật, chuyên môn",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "CORRESPONDENCES (THƯ TÍN)",
+      "words": [
+        {
+          "term": "assemble",
+          "pos": "verb",
+          "ipa": "/əˈsembl/",
+          "meaningVi": "lắp ráp, thu thập",
+          "example": ""
+        },
+        {
+          "term": "beforehand",
+          "pos": "adverb",
+          "ipa": "/bɪˈfɔːrhænd/",
+          "meaningVi": "trước, có sẵn",
+          "example": ""
+        },
+        {
+          "term": "complication",
+          "pos": "noun",
+          "ipa": "/ˌkɑːm.pləˈkeɪ.ʃən/",
+          "meaningVi": "sự phức tạp",
+          "example": ""
+        },
+        {
+          "term": "courier",
+          "pos": "noun",
+          "ipa": "/ˈkʊriər/",
+          "meaningVi": "người đưa thư",
+          "example": ""
+        },
+        {
+          "term": "distribute",
+          "pos": "verb",
+          "ipa": "/dɪˈstrɪb.juːt/",
+          "meaningVi": "phân phát",
+          "example": ""
+        },
+        {
+          "term": "express",
+          "pos": "adjective",
+          "ipa": "/ɪkˈspres/",
+          "meaningVi": "nhanh, hỏa tốc",
+          "example": ""
+        },
+        {
+          "term": "fold",
+          "pos": "verb",
+          "ipa": "/foʊld/",
+          "meaningVi": "gấp lại",
+          "example": ""
+        },
+        {
+          "term": "layout",
+          "pos": "noun",
+          "ipa": "/ˈleɪaʊt/",
+          "meaningVi": "cách trình bày, sự bố trí",
+          "example": ""
+        },
+        {
+          "term": "mention",
+          "pos": "noun, verb",
+          "ipa": "/ˈmenʃn/",
+          "meaningVi": "đề cập (v); sự đề cập (n)",
+          "example": ""
+        },
+        {
+          "term": "petition",
+          "pos": "verb, noun",
+          "ipa": "/pəˈtɪʃn/",
+          "meaningVi": "kiến nghị (v); đơn kiến nghị (n)",
+          "example": ""
+        },
+        {
+          "term": "proof",
+          "pos": "noun, verb",
+          "ipa": "/pruːf/",
+          "meaningVi": "bằng chứng (n) (= evidence); soát lỗi (v)",
+          "example": ""
+        },
+        {
+          "term": "revise",
+          "pos": "verb",
+          "ipa": "/rɪˈvaɪz/",
+          "meaningVi": "sửa lại, xem lại",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "JOB ADVERTISING AND RECRUITING (QUẢNG CÁO VIỆC LÀM VÀ",
+      "words": [
+        {
+          "term": "abundant",
+          "pos": "adjective",
+          "ipa": "/əˈbʌndənt/",
+          "meaningVi": "dồi dào, dư thừa",
+          "example": ""
+        },
+        {
+          "term": "accomplishment",
+          "pos": "noun",
+          "ipa": "/əˈkɑːm.plɪʃ.mənt/",
+          "meaningVi": "thành tựu",
+          "example": ""
+        },
+        {
+          "term": "bring together",
+          "pos": "verb",
+          "ipa": "/brɪŋ təˈɡeðə/",
+          "meaningVi": "gộp lại (= gather)",
+          "example": ""
+        },
+        {
+          "term": "candidate",
+          "pos": "noun",
+          "ipa": "/ˈkændɪdət/",
+          "meaningVi": "ứng viên, thí sinh",
+          "example": ""
+        },
+        {
+          "term": "come up with",
+          "pos": "verb",
+          "ipa": "/kʌm ʌp wɪθ/",
+          "meaningVi": "đưa ra, nghĩ ra",
+          "example": ""
+        },
+        {
+          "term": "commensurate with",
+          "pos": "adjective",
+          "ipa": "/kəˈmenʃərət /wɪð/",
+          "meaningVi": "tương xứng với",
+          "example": ""
+        },
+        {
+          "term": "match",
+          "pos": "noun, verb",
+          "ipa": "/mætʃ/",
+          "meaningVi": "hợp, xứng (v); sự tương xứng (n)",
+          "example": ""
+        },
+        {
+          "term": "profile",
+          "pos": "noun",
+          "ipa": "/ˈproʊfaɪl/",
+          "meaningVi": "lý lịch",
+          "example": ""
+        },
+        {
+          "term": "qualification",
+          "pos": "noun",
+          "ipa": "/kwɑː.lə.fəˈkeɪ.ʃən/",
+          "meaningVi": "năng lực, tố chất",
+          "example": ""
+        },
+        {
+          "term": "recruit",
+          "pos": "verb",
+          "ipa": "/rɪˈkruːt/",
+          "meaningVi": "tuyển dụng",
+          "example": ""
+        },
+        {
+          "term": "submit",
+          "pos": "verb",
+          "ipa": "/səbˈmɪt/",
+          "meaningVi": "nộp",
+          "example": ""
+        },
+        {
+          "term": "time-consuming",
+          "pos": "adjective",
+          "ipa": "/ˈtaɪmkənsuː.mɪŋ/",
+          "meaningVi": "tốn thời gian",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "APPLYING AND INTERVIEWING (ỨNG TUYỂN VÀ PHỎNG VẤN)",
+      "words": [
+        {
+          "term": "ability",
+          "pos": "noun",
+          "ipa": "/əˈbɪləti/",
+          "meaningVi": "khả năng, năng lực",
+          "example": ""
+        },
+        {
+          "term": "apply for",
+          "pos": "verb",
+          "ipa": "/əˈplaɪ foː/",
+          "meaningVi": "ứng tuyển vào",
+          "example": ""
+        },
+        {
+          "term": "background",
+          "pos": "noun",
+          "ipa": "/ˈbækɡraʊnd/",
+          "meaningVi": "lý lịch, nền tảng",
+          "example": ""
+        },
+        {
+          "term": "be ready for",
+          "pos": "verb",
+          "ipa": "/ biː ˈrɛdi fɔː/",
+          "meaningVi": "sẵn sàng cho",
+          "example": ""
+        },
+        {
+          "term": "call in",
+          "pos": "verb",
+          "ipa": "/kɔːl ɪn/",
+          "meaningVi": "mời tới, gọi vào làm việc",
+          "example": ""
+        },
+        {
+          "term": "confidence",
+          "pos": "noun",
+          "ipa": "/ˈkɑːnfɪdəns/",
+          "meaningVi": "sự tự tin",
+          "example": ""
+        },
+        {
+          "term": "constantly",
+          "pos": "adverb",
+          "ipa": "/ˈkɑːn.stənt.li/",
+          "meaningVi": "liên tục, không ngừng",
+          "example": ""
+        },
+        {
+          "term": "expert",
+          "pos": "noun",
+          "ipa": "/ˈekspɜːrt/",
+          "meaningVi": "chuyên gia, chuyên viên",
+          "example": ""
+        },
+        {
+          "term": "follow up",
+          "pos": "verb",
+          "ipa": "/ˈfɑːloʊ ʌp/",
+          "meaningVi": "bám sát, tiếp tục việc gì đó",
+          "example": ""
+        },
+        {
+          "term": "hesitant",
+          "pos": "adjective",
+          "ipa": "/ˈhez.ɪ.tənt/",
+          "meaningVi": "lưỡng lự, do dự",
+          "example": ""
+        },
+        {
+          "term": "interview",
+          "pos": "noun, verb",
+          "ipa": "/ˈɪntərvjuː/",
+          "meaningVi": "buổi phỏng vấn (n); phỏng vấn (v)",
+          "example": ""
+        },
+        {
+          "term": "present",
+          "pos": "verb, adjective",
+          "ipa": "/prɪˈzent/",
+          "meaningVi": "có mặt (adj); trình bày, nêu ra (v)",
+          "example": ""
+        },
+        {
+          "term": "weaken",
+          "pos": "verb",
+          "ipa": "/ˈwiːkən/",
+          "meaningVi": "làm yếu đi",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "HIRING AND TRAINING (TUYỂN DỤNG VÀ ĐÀO TẠO)",
+      "words": [
+        {
+          "term": "conduct",
+          "pos": "verb",
+          "ipa": "/kənˈdʌkt/",
+          "meaningVi": "tiến hành, thực hiện",
+          "example": ""
+        },
+        {
+          "term": "generate",
+          "pos": "verb",
+          "ipa": "/ˈdʒenəreɪt/",
+          "meaningVi": "tạo ra, sản xuất ra",
+          "example": ""
+        },
+        {
+          "term": "hire",
+          "pos": "verb, noun",
+          "ipa": "/ˈhaɪər/",
+          "meaningVi": "thuê, mướn (v); nhân viên, người làm thuê (n)",
+          "example": ""
+        },
+        {
+          "term": "keep up with",
+          "pos": "verb",
+          "ipa": "/kiːp ʌp wɪθ/",
+          "meaningVi": "theo kịp",
+          "example": ""
+        },
+        {
+          "term": "look up to somebody",
+          "pos": "verb",
+          "ipa": "/lʊk ʌp tuː/",
+          "meaningVi": "tôn trọng, ngưỡng mộ ai đó",
+          "example": ""
+        },
+        {
+          "term": "mentor",
+          "pos": "noun",
+          "ipa": "/ˈmentɔːr/",
+          "meaningVi": "cố vấn",
+          "example": ""
+        },
+        {
+          "term": "on track",
+          "pos": "adjective",
+          "ipa": "/ɔːn træk/",
+          "meaningVi": "theo đúng kế hoạch",
+          "example": ""
+        },
+        {
+          "term": "reject",
+          "pos": "noun, verb",
+          "ipa": "/rɪˈdʒekt/",
+          "meaningVi": "đồ thừa, phế phẩm (n); từ chối (v)",
+          "example": ""
+        },
+        {
+          "term": "set up",
+          "pos": "verb",
+          "ipa": "/set ʌp/",
+          "meaningVi": "thiết lập, sắp xếp",
+          "example": ""
+        },
+        {
+          "term": "success",
+          "pos": "noun",
+          "ipa": "/səkˈses/",
+          "meaningVi": "sự thành công",
+          "example": ""
+        },
+        {
+          "term": "training",
+          "pos": "noun",
+          "ipa": "/ˈtreɪ.nɪŋ/",
+          "meaningVi": "sự đào tạo, huấn luyện",
+          "example": ""
+        },
+        {
+          "term": "update",
+          "pos": "verb, noun",
+          "ipa": "/ˌʌpˈdeɪt/",
+          "meaningVi": "cập nhật (v); thông tin mới nhất (n)",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "SALARIES AND BENEFITS (LƯƠNG VÀ PHÚC LỢI)",
+      "words": [
+        {
+          "term": "be aware of",
+          "pos": "verb",
+          "ipa": "/biː əˈwer ɒv/",
+          "meaningVi": "biết được, nhận thức được",
+          "example": ""
+        },
+        {
+          "term": "basis",
+          "pos": "noun",
+          "ipa": "/ˈbeɪsɪs/",
+          "meaningVi": "cơ sở, căn cứ",
+          "example": ""
+        },
+        {
+          "term": "benefit",
+          "pos": "noun",
+          "ipa": "/ˈbenɪfɪt/",
+          "meaningVi": "lợi ích, phúc lợi",
+          "example": ""
+        },
+        {
+          "term": "compensate",
+          "pos": "verb",
+          "ipa": "/ˈkɑːmpenseɪt/",
+          "meaningVi": "đền bù, bồi thường (= make up for)",
+          "example": ""
+        },
+        {
+          "term": "delicate",
+          "pos": "adjective",
+          "ipa": "/ˈdel.ə.kət/",
+          "meaningVi": "tế nhị, khôn khéo tinh vi, tinh xảo",
+          "example": ""
+        },
+        {
+          "term": "eligible",
+          "pos": "adjective",
+          "ipa": "/ˈelɪdʒəbl/",
+          "meaningVi": "đủ tiêu chuẩn (= qualified)",
+          "example": ""
+        },
+        {
+          "term": "flexibly",
+          "pos": "adverb",
+          "ipa": "/ˈflek.sə.bli/",
+          "meaningVi": "một cách linh hoạt",
+          "example": ""
+        },
+        {
+          "term": "negotiate",
+          "pos": "verb",
+          "ipa": "/nɪˈɡoʊʃieɪt/",
+          "meaningVi": "đàm phán, thương lượng",
+          "example": ""
+        },
+        {
+          "term": "retire",
+          "pos": "verb",
+          "ipa": "/rɪˈtaɪər/",
+          "meaningVi": "nghỉ hưu",
+          "example": ""
+        },
+        {
+          "term": "vested",
+          "pos": "adjective",
+          "ipa": "/ˈvestɪd/",
+          "meaningVi": "giao cho, ban cho",
+          "example": ""
+        },
+        {
+          "term": "wage",
+          "pos": "noun",
+          "ipa": "/weɪdʒ/",
+          "meaningVi": "lương theo giờ",
+          "example": ""
+        },
+        {
+          "term": "raise",
+          "pos": "noun, verb",
+          "ipa": "/reɪz/",
+          "meaningVi": "tăng lên (v); sự tăng trưởng (n)",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "PROMOTIONS, PENSIONS AND AWARDS (THĂNG TIẾN, LƯƠNG HƯU",
+      "words": [
+        {
+          "term": "achievement",
+          "pos": "noun",
+          "ipa": "/əˈtʃiːv.mənt/",
+          "meaningVi": "thành tựu (= accomplishment)",
+          "example": ""
+        },
+        {
+          "term": "contribute",
+          "pos": "verb",
+          "ipa": "/kənˈtrɪbjuːt/",
+          "meaningVi": "đóng góp",
+          "example": ""
+        },
+        {
+          "term": "dedication",
+          "pos": "noun",
+          "ipa": "/ˌded.ɪˈkeɪ.ʃən/",
+          "meaningVi": "sự cống hiến",
+          "example": ""
+        },
+        {
+          "term": "looking forward to V-ing",
+          "pos": "verb",
+          "ipa": "/lʊk ˈfɔːrwərd tuː/",
+          "meaningVi": "trông mong, mong đợi",
+          "example": ""
+        },
+        {
+          "term": "look to",
+          "pos": "verb",
+          "ipa": "/lʊk tuː/",
+          "meaningVi": "trông cậy vào ai",
+          "example": ""
+        },
+        {
+          "term": "loyal",
+          "pos": "adjective",
+          "ipa": "/ˈlɔɪ.əl/",
+          "meaningVi": "trung thành",
+          "example": ""
+        },
+        {
+          "term": "merit",
+          "pos": "noun",
+          "ipa": "/ˈmerɪt/",
+          "meaningVi": "công lao, tài giỏi",
+          "example": ""
+        },
+        {
+          "term": "obviously",
+          "pos": "adverb",
+          "ipa": "/ˈɑːb.vi.əs.li/",
+          "meaningVi": "rõ ràng, hiển nhiên",
+          "example": ""
+        },
+        {
+          "term": "productive",
+          "pos": "adjective",
+          "ipa": "/prəˈdʌk.tɪv/",
+          "meaningVi": "có hiệu quả, có năng suất",
+          "example": ""
+        },
+        {
+          "term": "promote",
+          "pos": "verb",
+          "ipa": "/prəˈməʊt/",
+          "meaningVi": "đẩy mạnh/ thăng chức",
+          "example": ""
+        },
+        {
+          "term": "recognition",
+          "pos": "noun",
+          "ipa": "/ˌrek.əɡˈnɪʃ.ən/",
+          "meaningVi": "sự công nhận",
+          "example": ""
+        },
+        {
+          "term": "value",
+          "pos": "noun, verb",
+          "ipa": "/ˈvæljuː/",
+          "meaningVi": "định giá (v); giá trị (n)",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "SHOPPING (MUA SẮM)",
+      "words": [
+        {
+          "term": "bargain",
+          "pos": "noun, verb",
+          "ipa": "/ˈbɑːrɡən/",
+          "meaningVi": "món hời (n); mặc cả (v)",
+          "example": ""
+        },
+        {
+          "term": "bear",
+          "pos": "verb",
+          "ipa": "/ber/",
+          "meaningVi": "chịu đựng, cam chịu",
+          "example": ""
+        },
+        {
+          "term": "behavior",
+          "pos": "noun",
+          "ipa": "/bɪˈheɪ.vjər/",
+          "meaningVi": "thái độ, hành vi",
+          "example": ""
+        },
+        {
+          "term": "checkout",
+          "pos": "noun",
+          "ipa": "/tʃek aʊt əv/",
+          "meaningVi": "quầy thanh toán, thủ tục thanh toán",
+          "example": ""
+        },
+        {
+          "term": "comfort",
+          "pos": "noun, verb",
+          "ipa": "/ˈkʌmfərt/",
+          "meaningVi": "sự thoải mái (n); an ủi (v)",
+          "example": ""
+        },
+        {
+          "term": "expand",
+          "pos": "verb",
+          "ipa": "/ɪkˈspænd/",
+          "meaningVi": "mở rộng",
+          "example": ""
+        },
+        {
+          "term": "explore",
+          "pos": "verb",
+          "ipa": "/ɪkˈsplɔːr/",
+          "meaningVi": "khám phá, thăm dò",
+          "example": ""
+        },
+        {
+          "term": "item",
+          "pos": "noun",
+          "ipa": "/ˈaɪtəm/",
+          "meaningVi": "món hàng, món đồ",
+          "example": ""
+        },
+        {
+          "term": "mandatory",
+          "pos": "adjective",
+          "ipa": "/ˈmændətɔːri/",
+          "meaningVi": "bắt buộc",
+          "example": ""
+        },
+        {
+          "term": "merchandise",
+          "pos": "noun",
+          "ipa": "/ˈmɜːrtʃəndaɪz/",
+          "meaningVi": "hàng hóa (= goods)",
+          "example": ""
+        },
+        {
+          "term": "strictly",
+          "pos": "adverb",
+          "ipa": "/ˈstrɪkt.li/",
+          "meaningVi": "một cách nghiêm khắc",
+          "example": ""
+        },
+        {
+          "term": "trend",
+          "pos": "noun",
+          "ipa": "/trend/",
+          "meaningVi": "xu hướng",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "ORDERING SUPPLIES (ĐẶT HÀNG NHÀ CUNG CẤP)",
+      "words": [
+        {
+          "term": "diversify",
+          "pos": "verb",
+          "ipa": "/daɪˈvɜːrsɪfaɪ/",
+          "meaningVi": "đa dạng hóa",
+          "example": ""
+        },
+        {
+          "term": "consistent",
+          "pos": "adjective",
+          "ipa": "/kənˈsɪstənt/",
+          "meaningVi": "đều đặn, nhất quán",
+          "example": ""
+        },
+        {
+          "term": "enterprise",
+          "pos": "noun",
+          "ipa": "/ˈentərpraɪz/",
+          "meaningVi": "dự án lớn/ doanh nghiệp",
+          "example": ""
+        },
+        {
+          "term": "essentially",
+          "pos": "adverb",
+          "ipa": "/ɪˈsen.ʃəl.i/",
+          "meaningVi": "một cách thiết yếu, về cơ bản",
+          "example": ""
+        },
+        {
+          "term": "function",
+          "pos": "noun, verb",
+          "ipa": "/ˈfʌŋkʃn/",
+          "meaningVi": "hoạt động (v); nhiệm vụ, mục tiêu (n)",
+          "example": ""
+        },
+        {
+          "term": "maintain",
+          "pos": "verb",
+          "ipa": "/meɪnˈteɪn/",
+          "meaningVi": "duy trì",
+          "example": ""
+        },
+        {
+          "term": "obtain",
+          "pos": "verb",
+          "ipa": "/əbˈteɪn/",
+          "meaningVi": "đạt được, giành được",
+          "example": ""
+        },
+        {
+          "term": "prerequisite",
+          "pos": "noun",
+          "ipa": "/ˌpriːˈrekwəzɪt/",
+          "meaningVi": "điều kiện tiên quyết",
+          "example": ""
+        },
+        {
+          "term": "quality",
+          "pos": "noun",
+          "ipa": "/ˈkwɑːləti/",
+          "meaningVi": "chất lượng (sản phẩm); phẩm chất (người)",
+          "example": ""
+        },
+        {
+          "term": "source",
+          "pos": "noun",
+          "ipa": "/sɔːrs/",
+          "meaningVi": "nguồn",
+          "example": ""
+        },
+        {
+          "term": "stationery",
+          "pos": "noun",
+          "ipa": "/ˈsteɪʃəneri/",
+          "meaningVi": "văn phòng phẩm",
+          "example": ""
+        },
+        {
+          "term": "smooth",
+          "pos": "adjective",
+          "ipa": "/smuːð/",
+          "meaningVi": "suôn sẻ, trơn tru",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "SHIPPING (VẬN CHUYỂN)",
+      "words": [
+        {
+          "term": "carrier",
+          "pos": "noun",
+          "ipa": "/ˈkæriər/",
+          "meaningVi": "người vận chuyển, bên vận chuyển",
+          "example": ""
+        },
+        {
+          "term": "inventory",
+          "pos": "noun",
+          "ipa": "/ˈɪnvəntɔːri/",
+          "meaningVi": "bản kiểm kê hàng hóa/ hàng tồn",
+          "example": ""
+        },
+        {
+          "term": "accurately",
+          "pos": "adverb",
+          "ipa": "/ˈæk.jɚ.ət.li/",
+          "meaningVi": "một cách chính xác",
+          "example": ""
+        },
+        {
+          "term": "catalog",
+          "pos": "noun",
+          "ipa": "/ˈkætəlɔːɡ/",
+          "meaningVi": "bản liệt kê, danh mục sản phẩm",
+          "example": ""
+        },
+        {
+          "term": "fulfill",
+          "pos": "verb",
+          "ipa": "/fʊlˈfɪl/",
+          "meaningVi": "hoàn thành",
+          "example": ""
+        },
+        {
+          "term": "integral",
+          "pos": "adjective",
+          "ipa": "/ˈɪn.t̬ə.ɡrəl/",
+          "meaningVi": "cần thiết, không thể thiếu",
+          "example": ""
+        },
+        {
+          "term": "minimize",
+          "pos": "verb",
+          "ipa": "/ˈmɪnɪmaɪz/",
+          "meaningVi": "giảm thiểu",
+          "example": ""
+        },
+        {
+          "term": "on hand",
+          "pos": "adjective",
+          "ipa": "/ɒn hænd/",
+          "meaningVi": "có sẵn (= available)",
+          "example": ""
+        },
+        {
+          "term": "ship",
+          "pos": "verb",
+          "ipa": "/ʃɪp/",
+          "meaningVi": "vận chuyển",
+          "example": ""
+        },
+        {
+          "term": "sufficiently",
+          "pos": "adverb",
+          "ipa": "/səˈfɪʃ.ənt.li/",
+          "meaningVi": "đủ",
+          "example": ""
+        },
+        {
+          "term": "supply",
+          "pos": "noun, verb",
+          "ipa": "/səˈplaɪ/",
+          "meaningVi": "nguồn cung, sự cung cấp (n); cung cấp (v)",
+          "example": ""
+        },
+        {
+          "term": "receive",
+          "pos": "verb",
+          "ipa": "/rɪˈsiːv/",
+          "meaningVi": "nhận",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "INVOICES (HÓA ĐƠN)",
+      "words": [
+        {
+          "term": "charge",
+          "pos": "noun, verb",
+          "ipa": "/tʃɑːrdʒ/",
+          "meaningVi": "tiền phí (n); tính phí (v)",
+          "example": ""
+        },
+        {
+          "term": "compile",
+          "pos": "verb",
+          "ipa": "/kəmˈpaɪl/",
+          "meaningVi": "biên soạn, soạn",
+          "example": ""
+        },
+        {
+          "term": "customer",
+          "pos": "noun",
+          "ipa": "/ˈkʌstəmər/",
+          "meaningVi": "khách mua hàng",
+          "example": ""
+        },
+        {
+          "term": "discount",
+          "pos": "noun, verb",
+          "ipa": "/dɪsˈkaʊnt/",
+          "meaningVi": "sự giảm giá (n); giảm giá (v)",
+          "example": ""
+        },
+        {
+          "term": "dispute",
+          "pos": "verb",
+          "ipa": "/dɪˈspjuːt/",
+          "meaningVi": "tranh cãi",
+          "example": ""
+        },
+        {
+          "term": "efficient",
+          "pos": "adjective",
+          "ipa": "/ɪˈfɪʃ.ənt/",
+          "meaningVi": "hiệu quả (= effective)",
+          "example": ""
+        },
+        {
+          "term": "estimate",
+          "pos": "verb",
+          "ipa": "/ˈestɪmeɪt/",
+          "meaningVi": "ước tính",
+          "example": ""
+        },
+        {
+          "term": "impose",
+          "pos": "verb",
+          "ipa": "/ɪmˈpəʊz/",
+          "meaningVi": "áp đặt, ép buộc",
+          "example": ""
+        },
+        {
+          "term": "mistake",
+          "pos": "noun",
+          "ipa": "/mɪˈsteɪk/",
+          "meaningVi": "lỗi, nhầm lẫn",
+          "example": ""
+        },
+        {
+          "term": "prompt",
+          "pos": "adjective",
+          "ipa": "/ˈprɑːmpt/",
+          "meaningVi": "nhanh, đúng giờ (= punctual)",
+          "example": ""
+        },
+        {
+          "term": "rectify",
+          "pos": "verb",
+          "ipa": "/ˈrektɪfaɪ/",
+          "meaningVi": "khắc phục",
+          "example": ""
+        },
+        {
+          "term": "terms",
+          "pos": "noun",
+          "ipa": "/tɜːrmz/",
+          "meaningVi": "điều khoản (hợp đồng)",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "INVENTORY (HÀNG HÓA)",
+      "words": [
+        {
+          "term": "adjustment",
+          "pos": "noun",
+          "ipa": "/əˈdʒʌst.mənt/",
+          "meaningVi": "sự điều chỉnh",
+          "example": ""
+        },
+        {
+          "term": "automatic",
+          "pos": "adjective",
+          "ipa": "/ˌɑː.t̬əˈmæt̬.ɪk/",
+          "meaningVi": "tự động",
+          "example": ""
+        },
+        {
+          "term": "crucial",
+          "pos": "adjective",
+          "ipa": "/ˈkruːʃl/",
+          "meaningVi": "cốt yếu, quan trọng",
+          "example": ""
+        },
+        {
+          "term": "discrepancy",
+          "pos": "noun",
+          "ipa": "/dɪsˈkrepənsi/",
+          "meaningVi": "sự khác nhau, không nhất quán",
+          "example": ""
+        },
+        {
+          "term": "disturb",
+          "pos": "verb",
+          "ipa": "/dɪˈstɜːrb/",
+          "meaningVi": "làm phiền, quấy rầy",
+          "example": ""
+        },
+        {
+          "term": "reflection",
+          "pos": "noun",
+          "ipa": "/rɪˈflek.ʃən/",
+          "meaningVi": "sự phản chiếu",
+          "example": ""
+        },
+        {
+          "term": "run",
+          "pos": "verb",
+          "ipa": "/rʌn/",
+          "meaningVi": "điều hành, vận hành",
+          "example": ""
+        },
+        {
+          "term": "scan",
+          "pos": "verb",
+          "ipa": "/skæn/",
+          "meaningVi": "đọc lướt, xem lướt",
+          "example": ""
+        },
+        {
+          "term": "subtract",
+          "pos": "verb",
+          "ipa": "/səbˈtrækt/",
+          "meaningVi": "trừ đi",
+          "example": ""
+        },
+        {
+          "term": "tedious",
+          "pos": "noun",
+          "ipa": "/ˈtiː.di.əs/",
+          "meaningVi": "buồn tẻ, sự nhạt nhẽo",
+          "example": ""
+        },
+        {
+          "term": "verify",
+          "pos": "verb",
+          "ipa": "/ˈverɪfaɪ/",
+          "meaningVi": "xác minh, kiểm chứng",
+          "example": ""
+        },
+        {
+          "term": "install",
+          "pos": "verb",
+          "ipa": "/ɪnˈstɔːl/",
+          "meaningVi": "lắp đặt, cài đặt",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "BANKING (GIAO DỊCH NGÂN HÀNG)",
+      "words": [
+        {
+          "term": "accept",
+          "pos": "verb",
+          "ipa": "/əkˈsept/",
+          "meaningVi": "nhận, chấp nhận",
+          "example": ""
+        },
+        {
+          "term": "balance",
+          "pos": "noun",
+          "ipa": "/ˈbæləns/",
+          "meaningVi": "sự cân bằng/ số dư tài khoản",
+          "example": ""
+        },
+        {
+          "term": "borrow",
+          "pos": "verb",
+          "ipa": "/ˈbɑːroʊ/",
+          "meaningVi": "vay, mượn",
+          "example": ""
+        },
+        {
+          "term": "cautiously",
+          "pos": "adverb",
+          "ipa": "/ˈkɑː.ʃəs.li/",
+          "meaningVi": "một cách cẩn thận",
+          "example": ""
+        },
+        {
+          "term": "deduct",
+          "pos": "verb",
+          "ipa": "/dɪˈdʌkt/",
+          "meaningVi": "khấu trừ",
+          "example": ""
+        },
+        {
+          "term": "dividend",
+          "pos": "noun",
+          "ipa": "/ˈdɪvɪdend/",
+          "meaningVi": "cổ tức, tiền lãi cổ phần",
+          "example": ""
+        },
+        {
+          "term": "down payment",
+          "pos": "noun",
+          "ipa": "/daʊn ˈpeɪmənt/",
+          "meaningVi": "tiền cọc, tiền trả trước",
+          "example": ""
+        },
+        {
+          "term": "mortgage",
+          "pos": "noun, verb",
+          "ipa": "/ˈmɔːrɡɪdʒ/",
+          "meaningVi": "sự cầm cố, sự thế chấp (n); cầm cố, thế chấp (v)",
+          "example": ""
+        },
+        {
+          "term": "restricted",
+          "pos": "adjective",
+          "ipa": "/rəˈstriktəd/",
+          "meaningVi": "bị hạn chế (= limited)",
+          "example": ""
+        },
+        {
+          "term": "signature",
+          "pos": "noun",
+          "ipa": "/ˈsɪɡ.nə.tʃɚ/",
+          "meaningVi": "chữ ký",
+          "example": ""
+        },
+        {
+          "term": "take out",
+          "pos": "verb",
+          "ipa": "/teɪk aʊt/",
+          "meaningVi": "rút tiền",
+          "example": ""
+        },
+        {
+          "term": "transaction",
+          "pos": "noun",
+          "ipa": "/trænˈzæk.ʃən/",
+          "meaningVi": "giao dịch",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "ACCOUNTING (KẾ TOÁN)",
+      "words": [
+        {
+          "term": "accounting",
+          "pos": "noun",
+          "ipa": "/əˈkaʊntɪŋ/",
+          "meaningVi": "công việc kế toán",
+          "example": ""
+        },
+        {
+          "term": "accumulate",
+          "pos": "verb",
+          "ipa": "/əˈkjuːmjəleɪt/",
+          "meaningVi": "tích lũy, gom góp",
+          "example": ""
+        },
+        {
+          "term": "asset",
+          "pos": "noun",
+          "ipa": "/ˈæset/",
+          "meaningVi": "tài sản",
+          "example": ""
+        },
+        {
+          "term": "audit",
+          "pos": "verb",
+          "ipa": "/ˈɔːdɪt/",
+          "meaningVi": "kiểm toán",
+          "example": ""
+        },
+        {
+          "term": "budget",
+          "pos": "noun, verb",
+          "ipa": "/ˈbʌdʒɪt/",
+          "meaningVi": "lên ngân sách (v); ngân sách (n)",
+          "example": ""
+        },
+        {
+          "term": "build up",
+          "pos": "verb",
+          "ipa": "/bɪld ʌp/",
+          "meaningVi": "tăng cường, phát triển dần",
+          "example": ""
+        },
+        {
+          "term": "client",
+          "pos": "noun",
+          "ipa": "/ˈklaɪənt/",
+          "meaningVi": "khách hàng",
+          "example": ""
+        },
+        {
+          "term": "debt",
+          "pos": "noun",
+          "ipa": "/det/",
+          "meaningVi": "món nợ, khoản nợ",
+          "example": ""
+        },
+        {
+          "term": "outstanding",
+          "pos": "adjective",
+          "ipa": "/aʊtˈstændɪŋ/",
+          "meaningVi": "chưa giải quyết, chưa thanh toán",
+          "example": ""
+        },
+        {
+          "term": "profitable",
+          "pos": "adjective",
+          "ipa": "/ˈprɑː.fɪ.t̬ə.bəl/",
+          "meaningVi": "có lời",
+          "example": ""
+        },
+        {
+          "term": "reconcile",
+          "pos": "verb",
+          "ipa": "/ˈrekənsaɪl/",
+          "meaningVi": "dàn xếp, làm cho nhất quán",
+          "example": ""
+        },
+        {
+          "term": "turnover",
+          "pos": "noun",
+          "ipa": "/ˈtɜːrnoʊvər/",
+          "meaningVi": "doanh thu, doanh số",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "INVESTMENTS (ĐẦU TƯ)",
+      "words": [
+        {
+          "term": "aggressive",
+          "pos": "adjective",
+          "ipa": "/əˈɡresɪv/",
+          "meaningVi": "hùng hổ, hung hăng",
+          "example": ""
+        },
+        {
+          "term": "attitude",
+          "pos": "noun",
+          "ipa": "/ˈætɪtuːd/",
+          "meaningVi": "thái độ",
+          "example": ""
+        },
+        {
+          "term": "commit",
+          "pos": "verb",
+          "ipa": "/kəˈmɪt/",
+          "meaningVi": "cam kết",
+          "example": ""
+        },
+        {
+          "term": "conservative",
+          "pos": "adjective",
+          "ipa": "/kənˈsɝː.və.t̬ɪv/",
+          "meaningVi": "thận trọng/ bảo thủ",
+          "example": ""
+        },
+        {
+          "term": "fund",
+          "pos": "noun, verb",
+          "ipa": "/fʌnd/",
+          "meaningVi": "tài trợ (v); quỹ (n)",
+          "example": ""
+        },
+        {
+          "term": "invest",
+          "pos": "verb",
+          "ipa": "/ɪnˈvest/",
+          "meaningVi": "đầu tư",
+          "example": ""
+        },
+        {
+          "term": "long-term",
+          "pos": "adjective",
+          "ipa": "/ˌlɔːŋ ˈtɜːrm/",
+          "meaningVi": "dài hạn",
+          "example": ""
+        },
+        {
+          "term": "portfolio",
+          "pos": "noun",
+          "ipa": "/pɔːrtˈfoʊlioʊ/",
+          "meaningVi": "danh mục đầu tư",
+          "example": ""
+        },
+        {
+          "term": "pull out",
+          "pos": "verb",
+          "ipa": "/pʊl aʊt/",
+          "meaningVi": "rút (đầu tư)",
+          "example": ""
+        },
+        {
+          "term": "resource",
+          "pos": "noun",
+          "ipa": "/ˈriːsɔːrs/",
+          "meaningVi": "nguồn tài nguyên, nguồn vốn",
+          "example": ""
+        },
+        {
+          "term": "return",
+          "pos": "noun",
+          "ipa": "/rɪˈtɜːrn/",
+          "meaningVi": "lợi nhuận",
+          "example": ""
+        },
+        {
+          "term": "wisely",
+          "pos": "adverb",
+          "ipa": "/ˈwaɪz.li/",
+          "meaningVi": "một khách khôn ngoan",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "TAXES (THUẾ)",
+      "words": [
+        {
+          "term": "calculation",
+          "pos": "noun",
+          "ipa": "/ˌkæl.kjəˈleɪ.ʃən/",
+          "meaningVi": "sự tính toán, sự dự trù",
+          "example": ""
+        },
+        {
+          "term": "deadline",
+          "pos": "noun",
+          "ipa": "/ˈdedlaɪn/",
+          "meaningVi": "hạn chót",
+          "example": ""
+        },
+        {
+          "term": "file",
+          "pos": "verb",
+          "ipa": "/faɪl/",
+          "meaningVi": "đệ trình, nộp/ sắp xếp (giấy tờ)",
+          "example": ""
+        },
+        {
+          "term": "fill out",
+          "pos": "verb",
+          "ipa": "/fɪl aʊt/",
+          "meaningVi": "điền vào (giấy tờ)",
+          "example": ""
+        },
+        {
+          "term": "give up",
+          "pos": "verb",
+          "ipa": "/ɡɪv ʌp/",
+          "meaningVi": "từ bỏ",
+          "example": ""
+        },
+        {
+          "term": "joint",
+          "pos": "adjective",
+          "ipa": "/dʒɔɪnt/",
+          "meaningVi": "chung, cùng",
+          "example": ""
+        },
+        {
+          "term": "owe",
+          "pos": "verb",
+          "ipa": "/oʊ/",
+          "meaningVi": "mắc nợ, mang ơn",
+          "example": ""
+        },
+        {
+          "term": "penalty",
+          "pos": "noun",
+          "ipa": "/ˈpen.əl.ti/",
+          "meaningVi": "khoản tiền phạt, hình phạt",
+          "example": ""
+        },
+        {
+          "term": "preparation",
+          "pos": "noun",
+          "ipa": "/ˌprep.əˈreɪ.ʃən/",
+          "meaningVi": "sự chuẩn bị",
+          "example": ""
+        },
+        {
+          "term": "refund",
+          "pos": "noun, verb",
+          "ipa": "/rɪˈfʌnd/",
+          "meaningVi": "sự hoàn lại (n); hoàn lại (v)",
+          "example": ""
+        },
+        {
+          "term": "spouse",
+          "pos": "noun",
+          "ipa": "/spaʊs/",
+          "meaningVi": "vợ/ chồng",
+          "example": ""
+        },
+        {
+          "term": "withhold",
+          "pos": "verb",
+          "ipa": "/wɪðˈhoʊld/",
+          "meaningVi": "giữ lại",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "FINANCIAL STATEMENTS (BÁO CÁO TÀI CHÍNH)",
+      "words": [
+        {
+          "term": "desire",
+          "pos": "noun, verb",
+          "ipa": "/dɪˈzaɪər/",
+          "meaningVi": "khao khát (v); sự khao khát (n)",
+          "example": ""
+        },
+        {
+          "term": "detail",
+          "pos": "noun",
+          "ipa": "/ˈdiːteɪl/",
+          "meaningVi": "chi tiết, tỉ mỉ",
+          "example": ""
+        },
+        {
+          "term": "forecast",
+          "pos": "noun, verb",
+          "ipa": "/ˈfɔːrkæst/",
+          "meaningVi": "dự báo (v); sự dự đoán (n)",
+          "example": ""
+        },
+        {
+          "term": "level",
+          "pos": "noun",
+          "ipa": "/ˈlevl/",
+          "meaningVi": "cấp bậc, mức",
+          "example": ""
+        },
+        {
+          "term": "overall",
+          "pos": "adjective",
+          "ipa": "/ˌoʊvərˈɔːl/",
+          "meaningVi": "toàn bộ, chung, tổng quát",
+          "example": ""
+        },
+        {
+          "term": "perspective",
+          "pos": "noun",
+          "ipa": "/pərˈspektɪv/",
+          "meaningVi": "quan điểm, cách nhìn nhận",
+          "example": ""
+        },
+        {
+          "term": "project",
+          "pos": "noun, verb",
+          "ipa": "/prəˈdʒekt/",
+          "meaningVi": "dự án (n); ước đoán (v)",
+          "example": ""
+        },
+        {
+          "term": "realistic",
+          "pos": "adjective",
+          "ipa": "/ˌriː.əˈlɪs.tɪk/",
+          "meaningVi": "thực tế",
+          "example": ""
+        },
+        {
+          "term": "target",
+          "pos": "verb",
+          "ipa": "/ˈtɑːrɡɪt/",
+          "meaningVi": "nhắm vào",
+          "example": ""
+        },
+        {
+          "term": "translation",
+          "pos": "noun",
+          "ipa": "/trænzˈleɪ.ʃən/",
+          "meaningVi": "bản dịch thuật, sự phiên dịch (về ngôn ngữ)",
+          "example": ""
+        },
+        {
+          "term": "typically",
+          "pos": "adverb",
+          "ipa": "/ˈtɪp.ɪ.kəl.i/",
+          "meaningVi": "tiêu biểu, điển hình",
+          "example": ""
+        },
+        {
+          "term": "yield",
+          "pos": "verb, noun",
+          "ipa": "/jiːld/",
+          "meaningVi": "sản lượng (n); sản xuất, cung cấp (v)",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "PROPERTY AND DEPARTMENTS (TÀI SẢN VÀ PHÒNG BAN)",
+      "words": [
+        {
+          "term": "adjacent",
+          "pos": "adjective",
+          "ipa": "/əˈdʒeɪsnt/",
+          "meaningVi": "liền kề, kế bên (= next to)",
+          "example": ""
+        },
+        {
+          "term": "collaboration",
+          "pos": "noun",
+          "ipa": "/kəˌlæb.əˈreɪ.ʃən/",
+          "meaningVi": "sự cộng tác",
+          "example": ""
+        },
+        {
+          "term": "concentrate on",
+          "pos": "verb",
+          "ipa": "/ˈkɑːnsntreɪt ɑːn/",
+          "meaningVi": "tập trung vào (= focus on)",
+          "example": ""
+        },
+        {
+          "term": "conductive",
+          "pos": "adjective",
+          "ipa": "/kənˈdʌk.tɪv/",
+          "meaningVi": "đóng góp có lợi",
+          "example": ""
+        },
+        {
+          "term": "disruption",
+          "pos": "noun",
+          "ipa": "/dɪsˈrʌp.ʃən/",
+          "meaningVi": "sự phá vỡ, sự hỗn loạn",
+          "example": ""
+        },
+        {
+          "term": "hamper",
+          "pos": "verb",
+          "ipa": "/ˈhæmpər/",
+          "meaningVi": "gây cản trở",
+          "example": ""
+        },
+        {
+          "term": "inconsiderate",
+          "pos": "adjective",
+          "ipa": "/ˌɪnkənˈsɪdərət/",
+          "meaningVi": "vô tâm/ không suy tính kỹ",
+          "example": ""
+        },
+        {
+          "term": "lobby",
+          "pos": "noun",
+          "ipa": "/ˈlɑːbi/",
+          "meaningVi": "hành lang, tiền sảnh",
+          "example": ""
+        },
+        {
+          "term": "move up",
+          "pos": "verb",
+          "ipa": "/muːv ʌp/",
+          "meaningVi": "thăng tiến, tiến lên",
+          "example": ""
+        },
+        {
+          "term": "open to",
+          "pos": "adjective",
+          "ipa": "/əʊpən tu/",
+          "meaningVi": "sẵn sàng đón nhận điều gì",
+          "example": ""
+        },
+        {
+          "term": "scrutiny",
+          "pos": "noun",
+          "ipa": "/ˈskruː.t̬ən.i/",
+          "meaningVi": "sự nghiên cứu kỹ lưỡng",
+          "example": ""
+        },
+        {
+          "term": "opt",
+          "pos": "verb",
+          "ipa": "/ɑːpt/",
+          "meaningVi": "chọn lựa",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "BOARD MEETINGS AND COMMITTEES (HỌP HỘI ĐỒNG VÀ ỦY BAN)",
+      "words": [
+        {
+          "term": "adhere to",
+          "pos": "verb",
+          "ipa": "/ədˈhɪr/",
+          "meaningVi": "tuân thủ",
+          "example": ""
+        },
+        {
+          "term": "agenda",
+          "pos": "noun",
+          "ipa": "/əˈdʒendə/",
+          "meaningVi": "chương trình hội nghị",
+          "example": ""
+        },
+        {
+          "term": "bring up",
+          "pos": "verb",
+          "ipa": "/brɪŋ ʌp/",
+          "meaningVi": "nêu ra, đề cập tới",
+          "example": ""
+        },
+        {
+          "term": "conclude",
+          "pos": "verb",
+          "ipa": "/kənˈkluːd/",
+          "meaningVi": "kết thúc, kết luận",
+          "example": ""
+        },
+        {
+          "term": "go ahead",
+          "pos": "verb",
+          "ipa": "/ɡoʊ əˈhed/",
+          "meaningVi": "tiếp tục",
+          "example": ""
+        },
+        {
+          "term": "goal",
+          "pos": "noun",
+          "ipa": "/ɡoʊl/",
+          "meaningVi": "mục tiêu",
+          "example": ""
+        },
+        {
+          "term": "lengthy",
+          "pos": "adjective",
+          "ipa": "/ˈleŋθi/",
+          "meaningVi": "độ dài, lâu",
+          "example": ""
+        },
+        {
+          "term": "matter",
+          "pos": "noun",
+          "ipa": "/ˈmætər/",
+          "meaningVi": "vấn đề",
+          "example": ""
+        },
+        {
+          "term": "periodically",
+          "pos": "adverb",
+          "ipa": "/ˌpɪriˈɑdɪkli/",
+          "meaningVi": "định kỳ",
+          "example": ""
+        },
+        {
+          "term": "priority",
+          "pos": "noun",
+          "ipa": "/praɪˈɔrət̮i/",
+          "meaningVi": "quyền ưu tiên, sự ưu tiên",
+          "example": ""
+        },
+        {
+          "term": "progress",
+          "pos": "noun, verb",
+          "ipa": "/prəˈɡres/",
+          "meaningVi": "phát triển, tiến bộ (v); sự phát triển, sự tiến bộ (n)",
+          "example": ""
+        },
+        {
+          "term": "waste",
+          "pos": "noun, verb",
+          "ipa": "/weɪst/",
+          "meaningVi": "lãng phí (v); sự lãng phí (n)",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "QUALITY CONTROL (QUẢN TRỊ CHẤT LƯỢNG)",
+      "words": [
+        {
+          "term": "brand",
+          "pos": "noun",
+          "ipa": "/brænd/",
+          "meaningVi": "thương hiệu, nhãn hàng",
+          "example": ""
+        },
+        {
+          "term": "conform to",
+          "pos": "verb",
+          "ipa": "/kənˈfɔːrm tu/",
+          "meaningVi": "phù hợp với",
+          "example": ""
+        },
+        {
+          "term": "defect",
+          "pos": "noun",
+          "ipa": "/ˈdiːfekt/",
+          "meaningVi": "nhược điểm",
+          "example": ""
+        },
+        {
+          "term": "enhance",
+          "pos": "verb",
+          "ipa": "/ɪnˈhæns/",
+          "meaningVi": "nâng cao",
+          "example": ""
+        },
+        {
+          "term": "garment",
+          "pos": "noun",
+          "ipa": "/ˈɡɑːrmənt/",
+          "meaningVi": "quần áo",
+          "example": ""
+        },
+        {
+          "term": "inspect",
+          "pos": "verb",
+          "ipa": "/ɪnˈspekt/",
+          "meaningVi": "kiểm tra, xem xét",
+          "example": ""
+        },
+        {
+          "term": "perceptive",
+          "pos": "adjective",
+          "ipa": "/pərˈsɛptɪv/",
+          "meaningVi": "tinh tường, sâu sắc",
+          "example": ""
+        },
+        {
+          "term": "repel",
+          "pos": "verb",
+          "ipa": "/rɪˈpel/",
+          "meaningVi": "đẩy lùi",
+          "example": ""
+        },
+        {
+          "term": "take back",
+          "pos": "verb",
+          "ipa": "/teɪk bæk/",
+          "meaningVi": "trả lại, lấy lại",
+          "example": ""
+        },
+        {
+          "term": "throw out",
+          "pos": "verb",
+          "ipa": "/θrəʊ aʊt/",
+          "meaningVi": "loại bỏ",
+          "example": ""
+        },
+        {
+          "term": "uniformly",
+          "pos": "adverb",
+          "ipa": "/ˈyunəˌfɔrm/",
+          "meaningVi": "giống nhau, đồng bộ",
+          "example": ""
+        },
+        {
+          "term": "wrinkle",
+          "pos": "noun",
+          "ipa": "/ˈrɪŋkl/",
+          "meaningVi": "nếp nhăn",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "PRODUCT DEVELOPMENT (PHÁT TRIỂN SẢN PHẨM)",
+      "words": [
+        {
+          "term": "anxious",
+          "pos": "adjective",
+          "ipa": "/ˈæŋkʃəs/",
+          "meaningVi": "lo lắng",
+          "example": ""
+        },
+        {
+          "term": "ascertain",
+          "pos": "verb",
+          "ipa": "/ˌæsərˈteɪn/",
+          "meaningVi": "xác định, chắc chắn",
+          "example": ""
+        },
+        {
+          "term": "assume",
+          "pos": "verb",
+          "ipa": "/əˈsuːm/",
+          "meaningVi": "đảm đương/ mặc định",
+          "example": ""
+        },
+        {
+          "term": "decade",
+          "pos": "verb",
+          "ipa": "/ˈdekeɪd/",
+          "meaningVi": "thập kỷ",
+          "example": ""
+        },
+        {
+          "term": "examine",
+          "pos": "verb",
+          "ipa": "/ɪɡˈzæmɪn/",
+          "meaningVi": "khảo sát",
+          "example": ""
+        },
+        {
+          "term": "experiment",
+          "pos": "noun, verb",
+          "ipa": "/ɪkˈsperɪmənt/",
+          "meaningVi": "làm thí nghiệm (v); cuộc thử nghiệm (n)",
+          "example": ""
+        },
+        {
+          "term": "logical",
+          "pos": "adjective",
+          "ipa": "/ˈlɑːdʒɪkl/",
+          "meaningVi": "hợp lý",
+          "example": ""
+        },
+        {
+          "term": "research",
+          "pos": "verb, noun",
+          "ipa": "/rɪˈsɜːrtʃ/",
+          "meaningVi": "nghiên cứu (v); việc nghiên cứu (n)",
+          "example": ""
+        },
+        {
+          "term": "responsibility",
+          "pos": "noun",
+          "ipa": "/rɪˌspɑːnsəˈbɪləti/",
+          "meaningVi": "trách nhiệm, bổn phận",
+          "example": ""
+        },
+        {
+          "term": "solve",
+          "pos": "verb",
+          "ipa": "/sɑːlv/",
+          "meaningVi": "giải quyết",
+          "example": ""
+        },
+        {
+          "term": "supervisor",
+          "pos": "noun",
+          "ipa": "/ˈsupərˌvaɪzər/",
+          "meaningVi": "người giám sát",
+          "example": ""
+        },
+        {
+          "term": "systematic",
+          "pos": "adjective",
+          "ipa": "/ˌsɪstəˈmætɪk/",
+          "meaningVi": "có hệ thống",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "RENTING AND LEASING (THUÊ VÀ CHO THUÊ)",
+      "words": [
+        {
+          "term": "apprehensive",
+          "pos": "adjective",
+          "ipa": "/ˌæprɪˈhensɪv/",
+          "meaningVi": "e ngại",
+          "example": ""
+        },
+        {
+          "term": "circumstance",
+          "pos": "noun",
+          "ipa": "/ˈsɜːrkəmstæns/",
+          "meaningVi": "hoàn cảnh, tình huống",
+          "example": ""
+        },
+        {
+          "term": "condition",
+          "pos": "noun",
+          "ipa": "/kənˈdɪʃn/",
+          "meaningVi": "điều kiện, tình trạng",
+          "example": ""
+        },
+        {
+          "term": "due to",
+          "pos": "preposition",
+          "ipa": "/duː tu/",
+          "meaningVi": "bởi vì, nhờ có",
+          "example": ""
+        },
+        {
+          "term": "fluctuate",
+          "pos": "verb",
+          "ipa": "/ˈflʌktʃueɪt/",
+          "meaningVi": "dao động, thay đổi thất thường",
+          "example": ""
+        },
+        {
+          "term": "get out of",
+          "pos": "verb",
+          "ipa": "/ɡet aʊt əv/",
+          "meaningVi": "ra khỏi, thoát khỏi",
+          "example": ""
+        },
+        {
+          "term": "indicator",
+          "pos": "noun",
+          "ipa": "/ˈɪndəˌkeɪt̮ər/",
+          "meaningVi": "dấu hiệu",
+          "example": ""
+        },
+        {
+          "term": "lease",
+          "pos": "noun, verb",
+          "ipa": "/liːs/",
+          "meaningVi": "hợp đồng cho thuê (n); cho thuê (v)",
+          "example": ""
+        },
+        {
+          "term": "lock into",
+          "pos": "verb",
+          "ipa": "/lɑːk ˈɪntu/",
+          "meaningVi": "ràng buộc",
+          "example": ""
+        },
+        {
+          "term": "occupy",
+          "pos": "noun",
+          "ipa": "/ˈɑːkjupaɪ/",
+          "meaningVi": "chiếm hữu",
+          "example": ""
+        },
+        {
+          "term": "tenant",
+          "pos": "noun",
+          "ipa": "/ˈtenənt/",
+          "meaningVi": "người thuê",
+          "example": ""
+        },
+        {
+          "term": "subject to",
+          "pos": "verb",
+          "ipa": "/ˈsʌbdʒɪkt/",
+          "meaningVi": "tuân thủ, lệ thuộc vào",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "SELECTING A RESTAURANT (CHỌN NHÀ HÀNG)",
+      "words": [
+        {
+          "term": "appeal",
+          "pos": "noun",
+          "ipa": "/əˈpiːl/",
+          "meaningVi": "sức cuốn hút",
+          "example": ""
+        },
+        {
+          "term": "arrive",
+          "pos": "verb",
+          "ipa": "/əˈraɪv/",
+          "meaningVi": "đến",
+          "example": ""
+        },
+        {
+          "term": "compromise",
+          "pos": "noun, verb",
+          "ipa": "/ˈkɑːmprəmaɪz/",
+          "meaningVi": "thỏa hiệp (v); sự thỏa hiệp (n)",
+          "example": ""
+        },
+        {
+          "term": "daring",
+          "pos": "adjective",
+          "ipa": "/ˈdɛrɪŋ/",
+          "meaningVi": "cả gan, táo bạo",
+          "example": ""
+        },
+        {
+          "term": "familiar with",
+          "pos": "adjective",
+          "ipa": "/fəˈmɪliər wɪθ/ /",
+          "meaningVi": "quen thuộc với",
+          "example": ""
+        },
+        {
+          "term": "guide",
+          "pos": "noun, verb",
+          "ipa": "/ɡaɪd/",
+          "meaningVi": "hướng dẫn viên hướng dẫn, chỉ đường",
+          "example": ""
+        },
+        {
+          "term": "majority",
+          "pos": "noun",
+          "ipa": "/məˈdʒɔːrəti/",
+          "meaningVi": "đa số",
+          "example": ""
+        },
+        {
+          "term": "mix",
+          "pos": "verb",
+          "ipa": "/mɪks/",
+          "meaningVi": "trộn, pha lẫn",
+          "example": ""
+        },
+        {
+          "term": "rely on",
+          "pos": "verb",
+          "ipa": "/rɪˈlaɪ ɔːn/",
+          "meaningVi": "dựa vào",
+          "example": ""
+        },
+        {
+          "term": "secure",
+          "pos": "verb, adjective",
+          "ipa": "/sɪˈkjʊr/",
+          "meaningVi": "bảo vệ (v); an toàn, bảo đảm (adj)",
+          "example": ""
+        },
+        {
+          "term": "subjective",
+          "pos": "adjective",
+          "ipa": "/səbˈdʒektɪv/",
+          "meaningVi": "mang tính chủ quan",
+          "example": ""
+        },
+        {
+          "term": "suggestion",
+          "pos": "noun",
+          "ipa": "/səɡˈdʒɛstʃən/",
+          "meaningVi": "đề nghị, gợi ý",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "EATING OUT (ĐI ĂN NGOÀI)",
+      "words": [
+        {
+          "term": "appetite",
+          "pos": "noun",
+          "ipa": "/ˈæpɪtaɪt/",
+          "meaningVi": "sự thèm ăn",
+          "example": ""
+        },
+        {
+          "term": "complete",
+          "pos": "verb",
+          "ipa": "/kəmˈpliːt/",
+          "meaningVi": "hoàn thành",
+          "example": ""
+        },
+        {
+          "term": "excite",
+          "pos": "verb",
+          "ipa": "/ɪkˈsaɪt/",
+          "meaningVi": "kích thích",
+          "example": ""
+        },
+        {
+          "term": "flavor",
+          "pos": "noun",
+          "ipa": "/ˈfleɪvər/",
+          "meaningVi": "hương vị, mùi vị",
+          "example": ""
+        },
+        {
+          "term": "forget",
+          "pos": "verb",
+          "ipa": "/fəˈɡet/",
+          "meaningVi": "quên",
+          "example": ""
+        },
+        {
+          "term": "ingredient",
+          "pos": "noun",
+          "ipa": "/ɪnˈɡriːdiənt/",
+          "meaningVi": "thành phần",
+          "example": ""
+        },
+        {
+          "term": "judge",
+          "pos": "verb",
+          "ipa": "/dʒʌdʒ/",
+          "meaningVi": "bình phẩm, phán xét",
+          "example": ""
+        },
+        {
+          "term": "mix-up",
+          "pos": "noun",
+          "ipa": "/mɪks ʌp/",
+          "meaningVi": "sự nhầm lẫn",
+          "example": ""
+        },
+        {
+          "term": "patron",
+          "pos": "noun",
+          "ipa": "/ˈpeɪtrən/",
+          "meaningVi": "khách quen",
+          "example": ""
+        },
+        {
+          "term": "predict",
+          "pos": "verb",
+          "ipa": "/prɪˈdɪkt/",
+          "meaningVi": "dự đoán",
+          "example": ""
+        },
+        {
+          "term": "randomly",
+          "pos": "adverb",
+          "ipa": "/ˈrændəm/",
+          "meaningVi": "tình cờ, ngẫu nhiên",
+          "example": ""
+        },
+        {
+          "term": "remind",
+          "pos": "verb",
+          "ipa": "/rɪˈmaɪnd/",
+          "meaningVi": "nhắc nhở",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "ORDERING LUNCH (ĐẶT BỮA TRƯA)",
+      "words": [
+        {
+          "term": "burden",
+          "pos": "noun, verb",
+          "ipa": "/ˈbɜːrdn/",
+          "meaningVi": "gánh nặng (n); tạo gánh nặng (v)",
+          "example": ""
+        },
+        {
+          "term": "commonly",
+          "pos": "adverb",
+          "ipa": "/ˈkɑmənli/",
+          "meaningVi": "thông thường",
+          "example": ""
+        },
+        {
+          "term": "delivery",
+          "pos": "noun",
+          "ipa": "/dɪˈlɪvəri/",
+          "meaningVi": "sự giao hàng",
+          "example": ""
+        },
+        {
+          "term": "elegance",
+          "pos": "noun",
+          "ipa": "/ˈelɪɡəns/",
+          "meaningVi": "sự thanh lịch",
+          "example": ""
+        },
+        {
+          "term": "fall to",
+          "pos": "verb",
+          "ipa": "/fɔːl tuː/",
+          "meaningVi": "rơi vào tay (nói về trách nhiệm)",
+          "example": ""
+        },
+        {
+          "term": "impress",
+          "pos": "verb",
+          "ipa": "/ɪmˈpres/",
+          "meaningVi": "gây ấn tượng",
+          "example": ""
+        },
+        {
+          "term": "individual",
+          "pos": "adjective",
+          "ipa": "/ˌɪndɪˈvɪdʒuəl/",
+          "meaningVi": "cá nhân, riêng lẻ",
+          "example": ""
+        },
+        {
+          "term": "reasonable",
+          "pos": "adjective",
+          "ipa": "/ˈriːznəbl/",
+          "meaningVi": "hợp lý, phải chăng",
+          "example": ""
+        },
+        {
+          "term": "multiple",
+          "pos": "adjective",
+          "ipa": "/ˈmʌltɪplaɪ/",
+          "meaningVi": "nhiều (adj)",
+          "example": ""
+        },
+        {
+          "term": "narrow",
+          "pos": "adjective, verb",
+          "ipa": "/ˈnæroʊ/",
+          "meaningVi": "chật hẹp (adj); thu hẹp (v)",
+          "example": ""
+        },
+        {
+          "term": "pick up",
+          "pos": "verb",
+          "ipa": "/pɪk ʌp/",
+          "meaningVi": "nhận, lấy, nhặt",
+          "example": ""
+        },
+        {
+          "term": "settle",
+          "pos": "verb",
+          "ipa": "/ˈsetl/",
+          "meaningVi": "thanh toán",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "COOKING AS A CAREER (NẤU ĂN LÀ SỰ NGHIỆP)",
+      "words": [
+        {
+          "term": "accustom to",
+          "pos": "verb",
+          "ipa": "/əˈkʌstəm tu/",
+          "meaningVi": "làm quen với",
+          "example": ""
+        },
+        {
+          "term": "apprentice",
+          "pos": "noun",
+          "ipa": "/əˈprentɪs/",
+          "meaningVi": "người học việc",
+          "example": ""
+        },
+        {
+          "term": "culinary",
+          "pos": "adjective",
+          "ipa": "/ˈkʌlɪneri/",
+          "meaningVi": "thuộc về nấu nướng",
+          "example": ""
+        },
+        {
+          "term": "demand",
+          "pos": "verb",
+          "ipa": "/dɪˈmɑːnd/",
+          "meaningVi": "yêu cầu",
+          "example": ""
+        },
+        {
+          "term": "draw",
+          "pos": "verb",
+          "ipa": "/drɔː/",
+          "meaningVi": "thu hút, lôi cuốn",
+          "example": ""
+        },
+        {
+          "term": "incorporate",
+          "pos": "verb",
+          "ipa": "/ɪnˈkɔːrpəreɪt/",
+          "meaningVi": "sát nhập",
+          "example": ""
+        },
+        {
+          "term": "influx",
+          "pos": "noun",
+          "ipa": "/ˈɪnflʌks/",
+          "meaningVi": "dòng người đi vào",
+          "example": ""
+        },
+        {
+          "term": "method",
+          "pos": "noun",
+          "ipa": "/ˈmeθəd/",
+          "meaningVi": "phương pháp",
+          "example": ""
+        },
+        {
+          "term": "methodical",
+          "pos": "adjective",
+          "ipa": "/məˈθɑdɪkl/",
+          "meaningVi": "làm việc có hệ thống (tính cách)",
+          "example": ""
+        },
+        {
+          "term": "procedure",
+          "pos": "noun",
+          "ipa": "/prəˈsidʒər/",
+          "meaningVi": "quy trình",
+          "example": ""
+        },
+        {
+          "term": "outlet",
+          "pos": "noun",
+          "ipa": "/ˈaʊtlet/",
+          "meaningVi": "cách thể hiện",
+          "example": ""
+        },
+        {
+          "term": "profession",
+          "pos": "noun",
+          "ipa": "/prəˈfeʃn/",
+          "meaningVi": "chuyên môn",
+          "example": ""
+        },
+        {
+          "term": "relinquish",
+          "pos": "verb",
+          "ipa": "/rɪˈlɪŋkwɪʃ/",
+          "meaningVi": "từ bỏ",
+          "example": ""
+        },
+        {
+          "term": "theme",
+          "pos": "noun",
+          "ipa": "/θiːm/",
+          "meaningVi": "đề tài, chủ đề",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "EVENTS (SỰ KIỆN)",
+      "words": [
+        {
+          "term": "assist",
+          "pos": "verb",
+          "ipa": "/əˈsɪst/",
+          "meaningVi": "hỗ trợ",
+          "example": ""
+        },
+        {
+          "term": "support",
+          "pos": "verb",
+          "ipa": "/səˈpɔrt/",
+          "meaningVi": "ủng hộ, khuyến khích",
+          "example": ""
+        },
+        {
+          "term": "coordinate",
+          "pos": "verb",
+          "ipa": "/koʊˈɔːrdɪneɪt/",
+          "meaningVi": "điều phối",
+          "example": ""
+        },
+        {
+          "term": "dimension",
+          "pos": "noun",
+          "ipa": "/daɪˈmenʃn/",
+          "meaningVi": "kích thước",
+          "example": ""
+        },
+        {
+          "term": "general",
+          "pos": "adjective",
+          "ipa": "/ˈdʒenrəl/",
+          "meaningVi": "chung, tổng quát",
+          "example": ""
+        },
+        {
+          "term": "ideal",
+          "pos": "adjective",
+          "ipa": "/aɪˈdiːəl/",
+          "meaningVi": "lý tưởng",
+          "example": ""
+        },
+        {
+          "term": "exact",
+          "pos": "adjective",
+          "ipa": "/ɪɡˈzækt/",
+          "meaningVi": "chính xác",
+          "example": ""
+        },
+        {
+          "term": "lead time",
+          "pos": "noun",
+          "ipa": "/ˈliːd taɪm/",
+          "meaningVi": "thời gian tiến hành",
+          "example": ""
+        },
+        {
+          "term": "proximity",
+          "pos": "noun",
+          "ipa": "/prɑːkˈsɪməti/",
+          "meaningVi": "sự gần (về không gian, thời gian)",
+          "example": ""
+        },
+        {
+          "term": "regulation",
+          "pos": "noun",
+          "ipa": "/ˌrɛɡyəˈleɪʃn/",
+          "meaningVi": "quy định",
+          "example": ""
+        },
+        {
+          "term": "site",
+          "pos": "noun",
+          "ipa": "/saɪt/",
+          "meaningVi": "địa điểm (xây dựng)",
+          "example": ""
+        },
+        {
+          "term": "stage",
+          "pos": "verb",
+          "ipa": "/steɪdʒ/",
+          "meaningVi": "trình diễn",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "GENERAL TRAVEL (DU LỊCH)",
+      "words": [
+        {
+          "term": "agency",
+          "pos": "noun",
+          "ipa": "/ˈeɪdʒənsi/",
+          "meaningVi": "công ty đại diện, môi giới",
+          "example": ""
+        },
+        {
+          "term": "announce",
+          "pos": "verb",
+          "ipa": "/əˈnaʊns/",
+          "meaningVi": "thông báo",
+          "example": ""
+        },
+        {
+          "term": "beverage",
+          "pos": "noun",
+          "ipa": "/ˈbevərɪdʒ/",
+          "meaningVi": "đồ uống",
+          "example": ""
+        },
+        {
+          "term": "board",
+          "pos": "verb",
+          "ipa": "/bɔːrd/",
+          "meaningVi": "lên tàu, xe",
+          "example": ""
+        },
+        {
+          "term": "claim",
+          "pos": "verb",
+          "ipa": "/kleɪm/",
+          "meaningVi": "khẳng định/ đòi",
+          "example": ""
+        },
+        {
+          "term": "delay",
+          "pos": "verb",
+          "ipa": "/dɪˈleɪ/",
+          "meaningVi": "trì hoãn",
+          "example": ""
+        },
+        {
+          "term": "depart",
+          "pos": "verb",
+          "ipa": "/dɪˈpɑːrt/",
+          "meaningVi": "khởi hành",
+          "example": ""
+        },
+        {
+          "term": "embark",
+          "pos": "verb",
+          "ipa": "/ɪmˈbɑːrk/",
+          "meaningVi": "lên tàu",
+          "example": ""
+        },
+        {
+          "term": "itinerary",
+          "pos": "noun",
+          "ipa": "/aɪˈtɪnəreri/",
+          "meaningVi": "lịch trình, hành trình",
+          "example": ""
+        },
+        {
+          "term": "luggage",
+          "pos": "noun",
+          "ipa": "/ˈlʌɡɪdʒ/",
+          "meaningVi": "hành lý",
+          "example": ""
+        },
+        {
+          "term": "prohibit",
+          "pos": "verb",
+          "ipa": "/prəˈhɪbɪt/",
+          "meaningVi": "cấm, ngăn chặn",
+          "example": ""
+        },
+        {
+          "term": "valid",
+          "pos": "adjective",
+          "ipa": "/ˈvæl.ɪd/",
+          "meaningVi": "có hiệu lực",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "AIRLINES (HÀNG KHÔNG)",
+      "words": [
+        {
+          "term": "deal with",
+          "pos": "verb",
+          "ipa": "/diːl wɪθ/",
+          "meaningVi": "giải quyết, đối mặt với",
+          "example": ""
+        },
+        {
+          "term": "destination",
+          "pos": "noun",
+          "ipa": "/ˌdestɪˈneɪʃn/",
+          "meaningVi": "điểm đến",
+          "example": ""
+        },
+        {
+          "term": "distinguish",
+          "pos": "verb",
+          "ipa": "/dɪˈstɪŋɡwɪʃ/",
+          "meaningVi": "phân biệt",
+          "example": ""
+        },
+        {
+          "term": "economize",
+          "pos": "verb",
+          "ipa": "/ɪˈkɑːnəmaɪz/",
+          "meaningVi": "tiết kiệm (về tiền)",
+          "example": ""
+        },
+        {
+          "term": "equivalent",
+          "pos": "adjective",
+          "ipa": "/ɪˈkwɪvələnt/",
+          "meaningVi": "tương đương",
+          "example": ""
+        },
+        {
+          "term": "excursion",
+          "pos": "noun",
+          "ipa": "/ɪkˈskɜːrʒn/",
+          "meaningVi": "chuyến tham quan",
+          "example": ""
+        },
+        {
+          "term": "expense",
+          "pos": "noun",
+          "ipa": "/ɪkˈspens/",
+          "meaningVi": "chi phí",
+          "example": ""
+        },
+        {
+          "term": "extend",
+          "pos": "verb",
+          "ipa": "/ɪkˈstend/",
+          "meaningVi": "gia hạn, kéo dài",
+          "example": ""
+        },
+        {
+          "term": "prospective",
+          "pos": "adjective",
+          "ipa": "/prəˈspektɪv/",
+          "meaningVi": "có triển vọng, có khả năng",
+          "example": ""
+        },
+        {
+          "term": "situation",
+          "pos": "noun",
+          "ipa": "/ˌsɪtʃuˈeɪʃn/",
+          "meaningVi": "tình huống",
+          "example": ""
+        },
+        {
+          "term": "substantially",
+          "pos": "adverb",
+          "ipa": "/səbˈstæn.ʃəl.i/",
+          "meaningVi": "đáng kể",
+          "example": ""
+        },
+        {
+          "term": "economy class",
+          "pos": "noun",
+          "ipa": "/ɪˈkɑnəmi klæs/",
+          "meaningVi": "hạng phổ thông trên máy bay",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "TRAINS (XE LỬA)",
+      "words": [
+        {
+          "term": "comprehensive",
+          "pos": "adjective",
+          "ipa": "/ˌkɑːmprɪˈhensɪv/",
+          "meaningVi": "toàn diện, đầy đủ",
+          "example": ""
+        },
+        {
+          "term": "deluxe",
+          "pos": "adjective",
+          "ipa": "/ˌdəˈlʌks/",
+          "meaningVi": "sang trọng, cao cấp",
+          "example": ""
+        },
+        {
+          "term": "directory",
+          "pos": "noun",
+          "ipa": "/daɪˈrɛktəri/",
+          "meaningVi": "sách hướng dẫn",
+          "example": ""
+        },
+        {
+          "term": "duration",
+          "pos": "noun",
+          "ipa": "/duˈreɪʃn/",
+          "meaningVi": "khoảng thời gian",
+          "example": ""
+        },
+        {
+          "term": "entitle",
+          "pos": "verb",
+          "ipa": "/ɪnˈtaɪtl/",
+          "meaningVi": "cho phép",
+          "example": ""
+        },
+        {
+          "term": "fare",
+          "pos": "noun",
+          "ipa": "/fer/",
+          "meaningVi": "tiền vé",
+          "example": ""
+        },
+        {
+          "term": "offset",
+          "pos": "verb",
+          "ipa": "/ˈɔːfset/",
+          "meaningVi": "bù lại",
+          "example": ""
+        },
+        {
+          "term": "operate",
+          "pos": "verb",
+          "ipa": "/ˈɑːpəreɪt/",
+          "meaningVi": "hoạt động, vận hành",
+          "example": ""
+        },
+        {
+          "term": "punctual",
+          "pos": "adjective",
+          "ipa": "/ˈpʌŋktʃuəl/",
+          "meaningVi": "đúng giờ",
+          "example": ""
+        },
+        {
+          "term": "relatively",
+          "pos": "adverb",
+          "ipa": "/ˈrɛlət̮ɪvli/",
+          "meaningVi": "tương đối",
+          "example": ""
+        },
+        {
+          "term": "remainder",
+          "pos": "noun",
+          "ipa": "/rɪˈmeɪndər/",
+          "meaningVi": "phần còn lại",
+          "example": ""
+        },
+        {
+          "term": "remote",
+          "pos": "adjective",
+          "ipa": "/rɪˈmoʊt/",
+          "meaningVi": "xa xôi, hẻo lánh",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "HOTELS (KHÁCH SẠN)",
+      "words": [
+        {
+          "term": "advanced",
+          "pos": "adjective",
+          "ipa": "/ədˈvɑːnst/",
+          "meaningVi": "phát triển cao",
+          "example": ""
+        },
+        {
+          "term": "chain",
+          "pos": "noun",
+          "ipa": "/tʃeɪn/",
+          "meaningVi": "chuỗi (doanh nghiệp)",
+          "example": ""
+        },
+        {
+          "term": "check in",
+          "pos": "verb",
+          "ipa": "/tʃek ɪn/",
+          "meaningVi": "làm thủ tục (nhận phòng, nhận vé…)",
+          "example": ""
+        },
+        {
+          "term": "confirm",
+          "pos": "verb",
+          "ipa": "/kənˈfɜːrm/",
+          "meaningVi": "xác nhận, chứng thực",
+          "example": ""
+        },
+        {
+          "term": "expect",
+          "pos": "verb",
+          "ipa": "/ɪkˈspekt/",
+          "meaningVi": "mong đợi",
+          "example": ""
+        },
+        {
+          "term": "housekeeper",
+          "pos": "noun",
+          "ipa": "/ˈhaʊskiːpər/",
+          "meaningVi": "nhân viên dọn phòng",
+          "example": ""
+        },
+        {
+          "term": "notify",
+          "pos": "verb",
+          "ipa": "/ˈnoʊtɪfaɪ/",
+          "meaningVi": "thông báo",
+          "example": ""
+        },
+        {
+          "term": "preclude",
+          "pos": "verb",
+          "ipa": "/prɪˈkluːd/",
+          "meaningVi": "ngăn cản/ phòng ngừa",
+          "example": ""
+        },
+        {
+          "term": "quote",
+          "pos": "verb, noun",
+          "ipa": "/kwoʊt/",
+          "meaningVi": "trích dẫn (v); lời trích dẫn (n)",
+          "example": ""
+        },
+        {
+          "term": "rate",
+          "pos": "noun",
+          "ipa": "/reɪt/",
+          "meaningVi": "tỷ lệ, mức giá",
+          "example": ""
+        },
+        {
+          "term": "reserve",
+          "pos": "verb",
+          "ipa": "/rɪˈzɜːrv/",
+          "meaningVi": "đặt chỗ",
+          "example": ""
+        },
+        {
+          "term": "serve",
+          "pos": "verb",
+          "ipa": "/sɜːrv/",
+          "meaningVi": "phục vụ",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "CAR RENTALS (THUÊ Ô TÔ)",
+      "words": [
+        {
+          "term": "coincide",
+          "pos": "verb",
+          "ipa": "/ˌkoʊɪnˈsaɪd/",
+          "meaningVi": "trùng hợp, đồng thời",
+          "example": ""
+        },
+        {
+          "term": "confusion",
+          "pos": "noun",
+          "ipa": "/kənˈfyuʒn/",
+          "meaningVi": "sự bối rối",
+          "example": ""
+        },
+        {
+          "term": "contact",
+          "pos": "verb",
+          "ipa": "/ˈkɑːntækt/",
+          "meaningVi": "liên hệ",
+          "example": ""
+        },
+        {
+          "term": "disappoint",
+          "pos": "verb",
+          "ipa": "/ˌdɪsəˈpɔɪnt/",
+          "meaningVi": "gây thất vọng",
+          "example": ""
+        },
+        {
+          "term": "guarantee",
+          "pos": "verb, noun",
+          "ipa": "/ˌɡærənˈtiː/",
+          "meaningVi": "bảo đảm (v); sự bảo đảm (n)",
+          "example": ""
+        },
+        {
+          "term": "intend",
+          "pos": "verb",
+          "ipa": "/ɪnˈtend/",
+          "meaningVi": "dự định, có ý định",
+          "example": ""
+        },
+        {
+          "term": "license",
+          "pos": "noun",
+          "ipa": "/ˈlaɪsns/",
+          "meaningVi": "giấy phép",
+          "example": ""
+        },
+        {
+          "term": "nervous",
+          "pos": "adjective",
+          "ipa": "/ˈnɜːrvəs/",
+          "meaningVi": "lo lắng, bồn chồn",
+          "example": ""
+        },
+        {
+          "term": "optional",
+          "pos": "adjective",
+          "ipa": "/ˈɒp.ʃən.əl/",
+          "meaningVi": "tùy chọn, không bắt buộc",
+          "example": ""
+        },
+        {
+          "term": "tempt",
+          "pos": "verb",
+          "ipa": "/tempt/",
+          "meaningVi": "lôi kéo, thuyết phục",
+          "example": ""
+        },
+        {
+          "term": "thrill",
+          "pos": "verb, noun",
+          "ipa": "/θrɪl/",
+          "meaningVi": "hồi hộp, xúc động (v); cảm giác hồi hộp (n)",
+          "example": ""
+        },
+        {
+          "term": "tier",
+          "pos": "noun",
+          "ipa": "/tɪr/",
+          "meaningVi": "hàng, tầng",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "MOVIES (PHIM ẢNH)",
+      "words": [
+        {
+          "term": "attain",
+          "pos": "verb",
+          "ipa": "/əˈteɪn/",
+          "meaningVi": "đạt được (mục đích)",
+          "example": ""
+        },
+        {
+          "term": "combine",
+          "pos": "verb",
+          "ipa": "/kəmˈbaɪn/",
+          "meaningVi": "kết hợp, cộng lại",
+          "example": ""
+        },
+        {
+          "term": "continue",
+          "pos": "verb",
+          "ipa": "/kənˈtɪnjuː/",
+          "meaningVi": "tiếp tục (= go on)",
+          "example": ""
+        },
+        {
+          "term": "description",
+          "pos": "noun",
+          "ipa": "/dɪˈskrɪpʃn/",
+          "meaningVi": "sự mô tả",
+          "example": ""
+        },
+        {
+          "term": "disperse",
+          "pos": "verb",
+          "ipa": "/dɪˈspɜːrs/",
+          "meaningVi": "giải tán, phân tán",
+          "example": ""
+        },
+        {
+          "term": "entertain",
+          "pos": "verb",
+          "ipa": "/ˌentərˈteɪn/",
+          "meaningVi": "giải trí",
+          "example": ""
+        },
+        {
+          "term": "influence",
+          "pos": "noun, verb",
+          "ipa": "/ˈɪnfluəns/",
+          "meaningVi": "sự ảnh hưởng (n); gây ảnh hưởng (v)",
+          "example": ""
+        },
+        {
+          "term": "range",
+          "pos": "noun",
+          "ipa": "/reɪndʒ/",
+          "meaningVi": "phạm vi",
+          "example": ""
+        },
+        {
+          "term": "release",
+          "pos": "verb, noun",
+          "ipa": "/rɪˈliːs/",
+          "meaningVi": "công chiếu (v); sự công chiếu (n)",
+          "example": ""
+        },
+        {
+          "term": "represent",
+          "pos": "verb",
+          "ipa": "/ˌreprɪˈzent/",
+          "meaningVi": "tượng trưng, đại diện",
+          "example": ""
+        },
+        {
+          "term": "separate",
+          "pos": "adjective, verb",
+          "ipa": "/ˈsepəreɪt/",
+          "meaningVi": "riêng biệt (adj); tách rời, chia (v)",
+          "example": ""
+        },
+        {
+          "term": "successive",
+          "pos": "adjective",
+          "ipa": "/səkˈsesiv/",
+          "meaningVi": "liên tiếp",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "THEATER (RẠP PHIM)",
+      "words": [
+        {
+          "term": "action",
+          "pos": "noun",
+          "ipa": "/ˈæk.ʃən/",
+          "meaningVi": "diễn xuất",
+          "example": ""
+        },
+        {
+          "term": "approach",
+          "pos": "verb",
+          "ipa": "/əˈprəʊtʃ/",
+          "meaningVi": "tiếp cận",
+          "example": ""
+        },
+        {
+          "term": "audience",
+          "pos": "noun",
+          "ipa": "/ˈɔːdiəns/",
+          "meaningVi": "khán giả",
+          "example": ""
+        },
+        {
+          "term": "creative",
+          "pos": "adjective",
+          "ipa": "/kriˈeɪ.tɪv/",
+          "meaningVi": "sáng tạo",
+          "example": ""
+        },
+        {
+          "term": "dialogue",
+          "pos": "noun",
+          "ipa": "/ˈdaɪəlɑːɡ/",
+          "meaningVi": "cuộc đối thoại",
+          "example": ""
+        },
+        {
+          "term": "element",
+          "pos": "noun",
+          "ipa": "/ˈelɪmənt/",
+          "meaningVi": "yếu tố",
+          "example": ""
+        },
+        {
+          "term": "experience",
+          "pos": "noun",
+          "ipa": "/ɪkˈspɪriəns/",
+          "meaningVi": "kinh nghiệm",
+          "example": ""
+        },
+        {
+          "term": "occur",
+          "pos": "verb",
+          "ipa": "/əˈkɜːr/",
+          "meaningVi": "diễn ra, xảy ra",
+          "example": ""
+        },
+        {
+          "term": "perform",
+          "pos": "verb",
+          "ipa": "/pərˈfɔːrm/",
+          "meaningVi": "biểu diễn, trình diễn",
+          "example": ""
+        },
+        {
+          "term": "rehearse",
+          "pos": "verb",
+          "ipa": "/rɪˈhɜːrs/",
+          "meaningVi": "diễn tập",
+          "example": ""
+        },
+        {
+          "term": "review",
+          "pos": "noun, verb",
+          "ipa": "/rɪˈvjuː/",
+          "meaningVi": "bài phê bình (n); xem xét lại (v)",
+          "example": ""
+        },
+        {
+          "term": "sell out",
+          "pos": "verb",
+          "ipa": "/sel aʊt/",
+          "meaningVi": "bán hết",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "MUSIC (ÂM NHẠC)",
+      "words": [
+        {
+          "term": "available",
+          "pos": "adjective",
+          "ipa": "/əˈveɪləbl/",
+          "meaningVi": "sẵn có",
+          "example": ""
+        },
+        {
+          "term": "broaden",
+          "pos": "verb",
+          "ipa": "/ˈbrɔːdn/",
+          "meaningVi": "mở rộng",
+          "example": ""
+        },
+        {
+          "term": "categorize",
+          "pos": "verb",
+          "ipa": "/ˈkætəɡəraɪz/",
+          "meaningVi": "phân loại",
+          "example": ""
+        },
+        {
+          "term": "disparate",
+          "pos": "adjective",
+          "ipa": "/ˈdɪs.pɚ.ət/",
+          "meaningVi": "khác biệt hoàn toàn",
+          "example": ""
+        },
+        {
+          "term": "divide",
+          "pos": "verb",
+          "ipa": "/dɪˈvaɪd/",
+          "meaningVi": "phân chia",
+          "example": ""
+        },
+        {
+          "term": "favor",
+          "pos": "verb",
+          "ipa": "/ˈfeɪvər/",
+          "meaningVi": "ưu tiên hơn, ủng hộ hơn",
+          "example": ""
+        },
+        {
+          "term": "instinct",
+          "pos": "noun",
+          "ipa": "/ˈɪnstɪŋkt/",
+          "meaningVi": "bản năng",
+          "example": ""
+        },
+        {
+          "term": "prefer",
+          "pos": "verb",
+          "ipa": "/prɪˈfɜːr/",
+          "meaningVi": "thích hơn",
+          "example": ""
+        },
+        {
+          "term": "reason",
+          "pos": "noun",
+          "ipa": "/ˈriːzn/",
+          "meaningVi": "lý do",
+          "example": ""
+        },
+        {
+          "term": "relaxation",
+          "pos": "noun",
+          "ipa": "/ˌrilækˈseɪʃn/",
+          "meaningVi": "sự thư giãn",
+          "example": ""
+        },
+        {
+          "term": "taste",
+          "pos": "noun",
+          "ipa": "/teɪst/",
+          "meaningVi": "thị hiếu, gu (thẩm mỹ)",
+          "example": ""
+        },
+        {
+          "term": "urge",
+          "pos": "verb",
+          "ipa": "/ɜːrdʒ/",
+          "meaningVi": "thôi thúc (v)",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "MUSEUMS (BẢO TÀNG)",
+      "words": [
+        {
+          "term": "acquire",
+          "pos": "verb",
+          "ipa": "/əˈkwaɪər/",
+          "meaningVi": "có được, mua được tiếp thu (kiến thức)",
+          "example": ""
+        },
+        {
+          "term": "admire",
+          "pos": "verb",
+          "ipa": "/ədˈmaɪər/",
+          "meaningVi": "ngưỡng mộ",
+          "example": ""
+        },
+        {
+          "term": "collection",
+          "pos": "noun",
+          "ipa": "/kəˈlɛkʃn/",
+          "meaningVi": "bộ sưu tập",
+          "example": ""
+        },
+        {
+          "term": "criticism",
+          "pos": "noun",
+          "ipa": "/ˈkrɪt̮əˌsɪzəm/",
+          "meaningVi": "sự phê bình",
+          "example": ""
+        },
+        {
+          "term": "express",
+          "pos": "verb",
+          "ipa": "/ɪkˈspres/",
+          "meaningVi": "biểu lộ, bày tỏ",
+          "example": ""
+        },
+        {
+          "term": "fashion",
+          "pos": "noun",
+          "ipa": "/ˈfæʃn/",
+          "meaningVi": "thời trang",
+          "example": ""
+        },
+        {
+          "term": "leisure",
+          "pos": "noun",
+          "ipa": "/ˈliːʒər/",
+          "meaningVi": "thời gian rảnh",
+          "example": ""
+        },
+        {
+          "term": "respond",
+          "pos": "verb",
+          "ipa": "/rɪˈspɑːnd/",
+          "meaningVi": "phản ứng lại",
+          "example": ""
+        },
+        {
+          "term": "schedule",
+          "pos": "noun, verb",
+          "ipa": "/ˈskedʒuːl/",
+          "meaningVi": "lịch trình, kế hoạch (n); lên kế hoạch (v)",
+          "example": ""
+        },
+        {
+          "term": "significant",
+          "pos": "adjective",
+          "ipa": "/sɪɡˈnɪfɪkənt/",
+          "meaningVi": "quan trọng, có ý nghĩa",
+          "example": ""
+        },
+        {
+          "term": "specialize in",
+          "pos": "verb",
+          "ipa": "/ˈspeʃəlaɪz ɪn/",
+          "meaningVi": "chuyên về (lĩnh vực gì, làm gì)",
+          "example": ""
+        },
+        {
+          "term": "spectrum",
+          "pos": "noun",
+          "ipa": "/ˈspektrəm/",
+          "meaningVi": "quang phổ dải âm thanh",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "MEDIA (TRUYỀN THÔNG)",
+      "words": [
+        {
+          "term": "assignment",
+          "pos": "noun",
+          "ipa": "/əˈsaɪnmənt/",
+          "meaningVi": "bài tập, nhiệm vụ",
+          "example": ""
+        },
+        {
+          "term": "constantly",
+          "pos": "adverb",
+          "ipa": "/ˈkɒn.stənt.li/",
+          "meaningVi": "liên tục",
+          "example": ""
+        },
+        {
+          "term": "decisive",
+          "pos": "adjective",
+          "ipa": "/dɪˈsaɪsɪv/",
+          "meaningVi": "quyết đoán",
+          "example": ""
+        },
+        {
+          "term": "disseminate",
+          "pos": "verb",
+          "ipa": "/dɪˈsemɪneɪt/",
+          "meaningVi": "truyền bá",
+          "example": ""
+        },
+        {
+          "term": "impact",
+          "pos": "noun",
+          "ipa": "/ɪmˈpækt/",
+          "meaningVi": "sự tác động",
+          "example": ""
+        },
+        {
+          "term": "in-depth",
+          "pos": "adjective",
+          "ipa": "/ɪn depθ/",
+          "meaningVi": "kỹ càng, triệt để",
+          "example": ""
+        },
+        {
+          "term": "investigate",
+          "pos": "verb",
+          "ipa": "/ɪnˈvestɪɡeɪt/",
+          "meaningVi": "điều tra, theo dõi",
+          "example": ""
+        },
+        {
+          "term": "link",
+          "pos": "noun, verb",
+          "ipa": "/lɪŋk/",
+          "meaningVi": "mối liên hệ (n); liên kết (v)",
+          "example": ""
+        },
+        {
+          "term": "politician",
+          "pos": "noun",
+          "ipa": "/ˌpɑːləˈtɪʃn/",
+          "meaningVi": "chính trị gia",
+          "example": ""
+        },
+        {
+          "term": "subscribe",
+          "pos": "verb",
+          "ipa": "/səbˈskraɪb/",
+          "meaningVi": "đặt mua dài hạn",
+          "example": ""
+        },
+        {
+          "term": "thorough",
+          "pos": "adjective",
+          "ipa": "/ˈθɜːroʊ/",
+          "meaningVi": "kỹ lưỡng, tỉ mỉ",
+          "example": ""
+        },
+        {
+          "term": "choose",
+          "pos": "verb",
+          "ipa": "/tʃuːz/",
+          "meaningVi": "chọn lựa",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "DOCTOR’S OFFICE (PHÒNG KHÁM BÁC SĨ)",
+      "words": [
+        {
+          "term": "annual",
+          "pos": "adjective",
+          "ipa": "/ˈænjuəl/",
+          "meaningVi": "hàng năm",
+          "example": ""
+        },
+        {
+          "term": "appointment",
+          "pos": "noun",
+          "ipa": "/əˈpɔɪnt.mənt/",
+          "meaningVi": "cuộc hẹn",
+          "example": ""
+        },
+        {
+          "term": "assess",
+          "pos": "verb",
+          "ipa": "/əˈses/",
+          "meaningVi": "đánh giá",
+          "example": ""
+        },
+        {
+          "term": "diagnose",
+          "pos": "verb",
+          "ipa": "/ˌdaɪəɡˈnoʊs/",
+          "meaningVi": "chẩn đoán",
+          "example": ""
+        },
+        {
+          "term": "effective",
+          "pos": "adjective",
+          "ipa": "/ɪˈfektɪv/",
+          "meaningVi": "hiệu quả",
+          "example": ""
+        },
+        {
+          "term": "instrument",
+          "pos": "noun",
+          "ipa": "/ˈɪnstrəmənt/",
+          "meaningVi": "dụng cụ, thiết bị",
+          "example": ""
+        },
+        {
+          "term": "manage",
+          "pos": "verb",
+          "ipa": "/ˈmænɪdʒ/",
+          "meaningVi": "kiểm soát, quản lý",
+          "example": ""
+        },
+        {
+          "term": "prevent",
+          "pos": "verb",
+          "ipa": "/prɪˈvent/",
+          "meaningVi": "ngăn chặn",
+          "example": ""
+        },
+        {
+          "term": "recommend",
+          "pos": "verb",
+          "ipa": "/ˌrekəˈmend/",
+          "meaningVi": "đề nghị, gợi ý",
+          "example": ""
+        },
+        {
+          "term": "record",
+          "pos": "noun",
+          "ipa": "/ˈrek.ɔːd/",
+          "meaningVi": "hồ sơ",
+          "example": ""
+        },
+        {
+          "term": "serious",
+          "pos": "adjective",
+          "ipa": "/ˈsɪriəs/",
+          "meaningVi": "nghiêm trọng, nặng",
+          "example": ""
+        },
+        {
+          "term": "refer",
+          "pos": "verb",
+          "ipa": "/ rɪˈfɜːr/",
+          "meaningVi": "tham khảo",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "DENTIST’S OFFICE (PHÒNG KHÁM NHA KHOA)",
+      "words": [
+        {
+          "term": "catch up",
+          "pos": "verb",
+          "ipa": "/kætʃ ʌp/",
+          "meaningVi": "bắt kịp với",
+          "example": ""
+        },
+        {
+          "term": "distraction",
+          "pos": "noun",
+          "ipa": "/dɪˈstræk.ʃən/",
+          "meaningVi": "sự xao nhãng",
+          "example": ""
+        },
+        {
+          "term": "encouragement",
+          "pos": "noun",
+          "ipa": "/ /ɪnˈkʌr.ɪdʒ.mənt/",
+          "meaningVi": "sự khuyến khích",
+          "example": ""
+        },
+        {
+          "term": "evident",
+          "pos": "adjective",
+          "ipa": "/ˈevɪdənt/",
+          "meaningVi": "hiển nhiên, rõ ràng (=obvious)",
+          "example": ""
+        },
+        {
+          "term": "habit",
+          "pos": "noun",
+          "ipa": "/ˈhæbɪt/",
+          "meaningVi": "thói quen",
+          "example": ""
+        },
+        {
+          "term": "illuminate",
+          "pos": "verb",
+          "ipa": "/ɪˈluːmɪneɪt/",
+          "meaningVi": "chiếu sáng",
+          "example": ""
+        },
+        {
+          "term": "irritate",
+          "pos": "verb",
+          "ipa": "/ˈɪrɪteɪt/",
+          "meaningVi": "làm bực mình",
+          "example": ""
+        },
+        {
+          "term": "overview",
+          "pos": "noun",
+          "ipa": "/ˈoʊvərvjuː/",
+          "meaningVi": "cái nhìn khái quát",
+          "example": ""
+        },
+        {
+          "term": "position",
+          "pos": "noun",
+          "ipa": "/pəˈzɪʃn/",
+          "meaningVi": "vị trí, chỗ",
+          "example": ""
+        },
+        {
+          "term": "regular",
+          "pos": "adjective",
+          "ipa": "/ˈreɡjələr/",
+          "meaningVi": "thường xuyên",
+          "example": ""
+        },
+        {
+          "term": "restore",
+          "pos": "verb",
+          "ipa": "/rɪˈstɔːr/",
+          "meaningVi": "khôi phục",
+          "example": ""
+        },
+        {
+          "term": "aware",
+          "pos": "adjective",
+          "ipa": "/əˈwer/",
+          "meaningVi": "biết, nhận thức",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "HEALTH INSURANCE (BẢO HIỂM SỨC KHỎE)",
+      "words": [
+        {
+          "term": "alternative",
+          "pos": "adjective",
+          "ipa": "/ɔːlˈtɜːrnətɪv/",
+          "meaningVi": "thay thế, khác",
+          "example": ""
+        },
+        {
+          "term": "aspect",
+          "pos": "noun",
+          "ipa": "/ˈæspekt/",
+          "meaningVi": "khía cạnh",
+          "example": ""
+        },
+        {
+          "term": "concern",
+          "pos": "noun, verb",
+          "ipa": "/kənˈsɜːrn/",
+          "meaningVi": "bận tâm, lo lắng (v); mối quan tâm, lo lắng (n)",
+          "example": ""
+        },
+        {
+          "term": "emphasize",
+          "pos": "verb",
+          "ipa": "/ˈemfəsaɪz/",
+          "meaningVi": "nhấn mạnh",
+          "example": ""
+        },
+        {
+          "term": "incur",
+          "pos": "verb",
+          "ipa": "/ɪnˈkɜːr/",
+          "meaningVi": "gánh chịu",
+          "example": ""
+        },
+        {
+          "term": "personnel",
+          "pos": "noun",
+          "ipa": "/ˌpɜːrsəˈnel/",
+          "meaningVi": "nhân sự",
+          "example": ""
+        },
+        {
+          "term": "policy",
+          "pos": "noun",
+          "ipa": "/ˈpɑːləsi/",
+          "meaningVi": "chính sách",
+          "example": ""
+        },
+        {
+          "term": "portion",
+          "pos": "noun",
+          "ipa": "/ˈpɔːrʃn/",
+          "meaningVi": "phần",
+          "example": ""
+        },
+        {
+          "term": "regardless",
+          "pos": "adverb",
+          "ipa": "/rɪˈɡɑrdləs/",
+          "meaningVi": "bất chấp",
+          "example": ""
+        },
+        {
+          "term": "reimburse",
+          "pos": "verb",
+          "ipa": "/ˌriːɪmˈbɜːrs/",
+          "meaningVi": "hoàn trả",
+          "example": ""
+        },
+        {
+          "term": "suit",
+          "pos": "verb",
+          "ipa": "/suːt/",
+          "meaningVi": "hợp với",
+          "example": ""
+        },
+        {
+          "term": "treat",
+          "pos": "verb",
+          "ipa": "/triːt/",
+          "meaningVi": "chữa trị",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "HOSPITALS (BỆNH VIỆN)",
+      "words": [
+        {
+          "term": "accompany",
+          "pos": "verb",
+          "ipa": "/əˈkʌmpəni/",
+          "meaningVi": "đi cùng",
+          "example": ""
+        },
+        {
+          "term": "admit",
+          "pos": "verb",
+          "ipa": "/ədˈmɪt/",
+          "meaningVi": "cho vào, cho phép",
+          "example": ""
+        },
+        {
+          "term": "authorize",
+          "pos": "verb",
+          "ipa": "/ˈɔːθəraɪz/",
+          "meaningVi": "ủy quyền",
+          "example": ""
+        },
+        {
+          "term": "designate",
+          "pos": "verb",
+          "ipa": "/ˈdezɪɡneɪt/",
+          "meaningVi": "chỉ định",
+          "example": ""
+        },
+        {
+          "term": "escort",
+          "pos": "noun",
+          "ipa": "/ɪˈskɔːrt/",
+          "meaningVi": "người hộ tống",
+          "example": ""
+        },
+        {
+          "term": "identify",
+          "pos": "verb",
+          "ipa": "/aɪˈdentɪfaɪ/",
+          "meaningVi": "nhận diện",
+          "example": ""
+        },
+        {
+          "term": "permission",
+          "pos": "noun",
+          "ipa": "/pərˈmɪʃn/",
+          "meaningVi": "sự chấp thuận",
+          "example": ""
+        },
+        {
+          "term": "pertinent",
+          "pos": "adjective",
+          "ipa": "/ˈpɜːrtnənt/",
+          "meaningVi": "có liên quan",
+          "example": ""
+        },
+        {
+          "term": "procedure",
+          "pos": "noun",
+          "ipa": "/prəˈsiːdʒər/",
+          "meaningVi": "quy trình",
+          "example": ""
+        },
+        {
+          "term": "result",
+          "pos": "noun",
+          "ipa": "/rɪˈzʌlt/",
+          "meaningVi": "kết quả",
+          "example": ""
+        },
+        {
+          "term": "statement",
+          "pos": "noun",
+          "ipa": "/ˈsteɪtmənt/",
+          "meaningVi": "bản tường trình, báo cáo",
+          "example": ""
+        },
+        {
+          "term": "surgery",
+          "pos": "noun",
+          "ipa": "/ˈsɜːrdʒəri/",
+          "meaningVi": "ca phẫu thuật",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "title": "PHARMACY (HIỆU THUỐC)",
+      "words": [
+        {
+          "term": "consultation",
+          "pos": "noun",
+          "ipa": "/ˌkɑnslˈteɪʃn/",
+          "meaningVi": "việc bàn bạc, hội ý",
+          "example": ""
+        },
+        {
+          "term": "convenient",
+          "pos": "adjective",
+          "ipa": "/kənˈviːniənt/",
+          "meaningVi": "thuận tiện",
+          "example": ""
+        },
+        {
+          "term": "detect",
+          "pos": "verb",
+          "ipa": "/dɪˈtekt/",
+          "meaningVi": "tìm ra, phát hiện ra",
+          "example": ""
+        },
+        {
+          "term": "factor",
+          "pos": "noun",
+          "ipa": "/ˈfæktər/",
+          "meaningVi": "yếu tố",
+          "example": ""
+        },
+        {
+          "term": "interaction",
+          "pos": "noun",
+          "ipa": "/ˌɪntərˈækt/",
+          "meaningVi": "sự tương tác",
+          "example": ""
+        },
+        {
+          "term": "limit",
+          "pos": "noun",
+          "ipa": "/ˈlɪmɪt/",
+          "meaningVi": "giới hạn, định mức",
+          "example": ""
+        },
+        {
+          "term": "monitor",
+          "pos": "verb",
+          "ipa": "/ˈmɑːnɪtər/",
+          "meaningVi": "giám sát",
+          "example": ""
+        },
+        {
+          "term": "potential",
+          "pos": "adjective",
+          "ipa": "/pəˈtenʃl/",
+          "meaningVi": "tiềm năng",
+          "example": ""
+        },
+        {
+          "term": "sample",
+          "pos": "noun",
+          "ipa": "/ˈsæmpl/",
+          "meaningVi": "mẫu thử",
+          "example": ""
+        },
+        {
+          "term": "sense",
+          "pos": "noun",
+          "ipa": "/sens/",
+          "meaningVi": "khả năng phán đoán",
+          "example": ""
+        },
+        {
+          "term": "volunteer",
+          "pos": "verb, noun",
+          "ipa": "/ˌvɑː.lənˈtɪr/",
+          "meaningVi": "tình nguyện (v); tình nguyện viên (n)",
+          "example": ""
+        }
+      ]
+    }
+  ]
+}

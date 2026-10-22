@@ -4,14 +4,14 @@
 
 ## Trạng thái hiện tại
 
-Đã có giao diện và API CRUD cho bài học, chủ đề và từ vựng. Quan hệ dữ liệu là **Lesson → Topic → Word**. Khi xóa bài học/chủ đề, backend xóa cả dữ liệu con. Khi thêm từ vào chủ đề đã đủ 12 từ, backend tạo chủ đề tiếp nối và lưu từ vào đó.
+Đã có giao diện và API CRUD cho bài học, chủ đề và từ vựng. Quan hệ dữ liệu là **Lesson → Topic → Word**. Khi xóa bài học/chủ đề, backend xóa cả dữ liệu con. Moi topic co the chua khong gioi han so tu.
 
 Đã triển khai học flashcard, kiểm tra hai lượt theo bài học/chủ đề và trang thống kê từ sai. Giao diện cài đặt AI cùng tích hợp gọi nhà cung cấp AI vẫn đang hoàn thiện.
 
 ## Nghiệp vụ và quy tắc
 
 - Một bài học có nhiều chủ đề; một chủ đề có nhiều từ. Bài học tổng hợp từ các chủ đề qua truy vấn, không nhân bản từ.
-- Một chủ đề tối đa 12 từ. JSON import từ chối topic vượt quá giới hạn này.
+- Moi topic can co it nhat mot tu khi tao lesson hoac import JSON; ung dung khong gioi han so tu trong topic. File JSON upload toi da 2 MB.
 - Từ trùng giữa các chủ đề được cho phép. Thống kê từ sai dùng `term_norm` (chữ thường, bỏ khoảng trắng đầu/cuối), không phụ thuộc `word_id`.
 - Bộ từ kiểm tra chủ đề gồm toàn bộ từ hiện tại, từ sai thuộc tối đa 3 topic đứng liền trước (3 topic gần nhất theo thứ tự trong lesson; không xét topic cũ hơn) và tối đa 3 từ sai ngẫu nhiên từ lịch sử; loại trùng theo `term_norm`.
 - Bộ từ kiểm tra bài học gồm toàn bộ từ trong bài và tối đa 3 từ sai ngẫu nhiên ngoài bài.
@@ -19,7 +19,7 @@
 - Kết quả hai lượt được lưu trong phiên kiểm tra; điểm là phần trăm câu đúng trên tổng số câu của cả hai lượt. Một từ được tính là đúng hoàn toàn khi đúng ở cả hai lượt.
 - Từ đang sai được gỡ khỏi danh sách sai sau 3 câu đúng tích lũy. Nếu sai lại, bộ đếm đúng quay về 0.
 - Thống kê được gộp theo `term_norm`: mỗi câu trả lời ở cả hai lượt làm tăng bộ đếm đúng hoặc sai tương ứng. Trang **Thống kê từ sai** lọc từ đang cần ôn/đã cải thiện, tìm theo từ và hiển thị lần sai gần nhất.
-- Các ngưỡng 12 / 3 / 3 / 3 được cấu hình trong `app.rules` ở `application.yml`.
+- Các ngưỡng 3 / 3 / 3 / 3 được cấu hình trong `app.rules` ở `application.yml`.
 - JSON import hỗ trợ tạo bài học mới hoặc thêm topic và từ vào bài học đã chọn; dữ liệu được ghi trong một giao dịch.
 
 ## Thiết kế và cấu trúc
@@ -58,7 +58,7 @@ BE/src/main/resources/
 
 Tạo/sửa bài học gửi JSON `{ "title": "Tên bài học" }`. Tạo/sửa chủ đề gửi `{ "lessonId": 1, "title": "Tên chủ đề", "orderIndex": 0 }`. Tạo/sửa từ gửi `{ "topicId": 1, "term": "apple", "pos": "noun", "ipa": "ˈæp.əl", "meaningVi": "quả táo", "example": "I eat an apple." }` (`pos`, `ipa`, `example`, `orderIndex` có thể bỏ qua).
 
-Trong trang chi tiết topic, form nhập từ chỉ mở khi nhấn **Thêm từ**. Có thể thêm nhiều dòng và lưu một lần; backend kiểm tra tổng số từ của topic không vượt quá 12 và lưu cả batch trong một giao dịch.
+Trong trang chi tiết topic, form nhập từ chỉ mở khi nhấn **Thêm từ**. Có thể thêm nhiều dòng và lưu một lần; backend kiểm tra tổng số từ của topic khong gioi han so tu và lưu cả batch trong một giao dịch.
 
 Trên trang Bài học chọn **Thêm bài học** để mở form tạo lesson, topic và words cùng lúc; có thể nhập tay hoặc nạp JSON để điền form, chỉnh sửa rồi lưu một lần. File JSON tối đa 2 MB; có file mẫu tại `examples/example.json`. Dùng cấu trúc:
 
@@ -76,7 +76,7 @@ Trên trang Bài học chọn **Thêm bài học** để mở form tạo lesson,
 }
 ```
 
-Khi nhập vào bài học đang mở, có thể dùng nguyên file mẫu gồm `title` và `topics`; frontend chỉ gửi `topics` cùng `words` bên trong, bỏ thông tin lesson trước khi gọi API. Mỗi lần import cần ít nhất một topic; mỗi topic phải có 1–12 từ; mỗi từ cần `term` và `meaningVi`. Import tạo topic mới ở cuối bài học, không ghi đè các topic hiện có. Trang tạo bài học gửi toàn bộ nội dung trong một yêu cầu để lưu lesson, topic và word cùng lúc.
+When importing into an existing lesson, include at least one topic and at least one word per topic. Each word needs `term` and `meaningVi`. There is no per-topic word limit. JSON uploads are limited to 2 MB. Import appends topics without replacing existing content.
 
 ## Cách chạy bằng Docker (khuyến nghị)
 

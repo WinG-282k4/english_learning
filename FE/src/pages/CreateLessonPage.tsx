@@ -43,7 +43,7 @@ export const CreateLessonPage: React.FC = () => {
     setError('');
     if (!title.trim()) { setError('Vui lòng nhập tên bài học.'); return; }
     if (topics.some(topic => !topic.title.trim())) { setError('Vui lòng nhập tên cho tất cả topic.'); return; }
-    if (topics.some(topic => topic.words.length === 0 || topic.words.length > 12)) { setError('Mỗi topic cần có từ 1 đến 12 từ.'); return; }
+    if (topics.some(topic => topic.words.length === 0)) { setError('M\u1ed7i topic c\u1ea7n c\u00f3 \u00edt nh\u1ea5t m\u1ed9t t\u1eeb.'); return; }
     if (topics.some(topic => topic.words.some(word => !word.term.trim() || !word.meaningVi.trim()))) { setError('Mỗi từ cần có từ tiếng Anh và nghĩa tiếng Việt.'); return; }
     setBusy(true);
     try {
@@ -76,7 +76,7 @@ export const CreateLessonPage: React.FC = () => {
             <label className="wide-field">Câu ví dụ<input value={word.example ?? ''} onChange={event => updateWord(topicIndex, wordIndex, { example: event.target.value })} placeholder="The cat is sleeping." /></label>
           </div>
         </div>)}
-        <button type="button" className="button" onClick={() => updateTopic(topicIndex, { words: [...topic.words, emptyWord()] })} disabled={topic.words.length >= 12}>+ Thêm từ ({topic.words.length}/12)</button>
+        <button type="button" className="button" onClick={() => updateTopic(topicIndex, { words: [...topic.words, emptyWord()] })} >+ Thêm từ ({topic.words.length})</button>
       </section>)}
       <div className="create-actions"><button type="button" className="button" onClick={() => setTopics(current => [...current, emptyTopic()])}>+ Thêm topic</button><button type="submit" className="button primary" disabled={busy}>{busy ? 'Đang tạo…' : 'Tạo bài học'}</button></div>
     </form>

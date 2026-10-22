@@ -3,7 +3,6 @@ package com.app.vocab.importer;
 import com.app.vocab.lesson.Lesson;
 import com.app.vocab.lesson.LessonDtos;
 import com.app.vocab.lesson.LessonRepository;
-import com.app.vocab.config.AppProperties;
 import com.app.vocab.topic.Topic;
 import com.app.vocab.topic.TopicRepository;
 import com.app.vocab.word.Word;
@@ -25,15 +24,13 @@ public class LessonJsonImportService {
     private final LessonRepository lessonRepository;
     private final TopicRepository topicRepository;
     private final WordRepository wordRepository;
-    private final AppProperties appProperties;
 
     public LessonJsonImportService(ObjectMapper objectMapper, LessonRepository lessonRepository,
-                                   TopicRepository topicRepository, WordRepository wordRepository, AppProperties appProperties) {
+                                   TopicRepository topicRepository, WordRepository wordRepository) {
         this.objectMapper = objectMapper;
         this.lessonRepository = lessonRepository;
         this.topicRepository = topicRepository;
         this.wordRepository = wordRepository;
-        this.appProperties = appProperties;
     }
 
     @Transactional
@@ -83,9 +80,6 @@ public class LessonJsonImportService {
         for (var topic : data.topics()) {
             if (topic == null || topic.title() == null || topic.title().isBlank() || topic.words() == null || topic.words().isEmpty()) {
                 throw badRequest("Mỗi topic cần có tên và ít nhất một từ.");
-            }
-            if (topic.words().size() > appProperties.getRules().getMaxWordsPerTopic()) {
-                throw badRequest("Mỗi topic không được vượt quá " + appProperties.getRules().getMaxWordsPerTopic() + " từ.");
             }
             for (var word : topic.words()) {
                 if (word == null || word.term() == null || word.term().isBlank() || word.meaningVi() == null || word.meaningVi().isBlank()) {

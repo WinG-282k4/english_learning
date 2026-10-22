@@ -18,7 +18,6 @@ public class AppProperties {
     @Getter
     @Setter
     public static class Rules {
-        private int maxWordsPerTopic = 12;
         private int maxPrevTopics = 3;
         private int randomPastWrongCount = 3;
         private int resolveWrongThreshold = 3;
