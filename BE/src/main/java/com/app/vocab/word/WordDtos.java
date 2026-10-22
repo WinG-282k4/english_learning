@@ -2,6 +2,9 @@ package com.app.vocab.word;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import java.util.List;
 
 public final class WordDtos {
     private WordDtos() {}
@@ -33,5 +36,18 @@ public final class WordDtos {
 
         String example,
         Integer orderIndex
+    ) {}
+
+    public record BatchWord(
+        @NotBlank(message = "Term is required") String term,
+        String pos,
+        String ipa,
+        @NotBlank(message = "Vietnamese meaning is required") String meaningVi,
+        String example
+    ) {}
+
+    public record BatchCreate(
+        @NotNull(message = "Topic ID is required") Long topicId,
+        @NotEmpty(message = "At least one word is required") List<@Valid BatchWord> words
     ) {}
 }

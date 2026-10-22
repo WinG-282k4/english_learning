@@ -1,7 +1,15 @@
 import { ApiClient } from './apiClient';
-import { Lesson } from '../types/vocab';
+import { Lesson, LessonContentPayload, LessonImportPayload } from '../types/vocab';
 
 export class LessonApi {
+  static async appendJson(id: number, payload: LessonContentPayload): Promise<Lesson> {
+    return ApiClient.post<Lesson>(`/lessons/${id}/import-json`, payload);
+  }
+
+  static async createWithContent(payload: LessonImportPayload): Promise<Lesson> {
+    return ApiClient.post<Lesson>('/lessons/with-content', payload);
+  }
+
   static async getAll(): Promise<Lesson[]> {
     return ApiClient.get<Lesson[]>('/lessons');
   }

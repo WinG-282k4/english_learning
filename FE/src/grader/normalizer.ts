@@ -22,7 +22,7 @@ export class TextNormalizer {
   /**
    * Splits meaning string (e.g. "chạy; vận hành") into individual normalized meanings.
    */
-  static parseMeanings(meaningVi: string): string[] {
+  static parseMeanings(_meaningVi: string): string[] {
     // TODO: split by ';' or ',' and normalize each meaning
     return [];
   }

@@ -6,6 +6,32 @@ export interface Lesson {
   totalWords: number;
 }
 
+export interface LessonImportWord {
+  term: string;
+  pos?: string;
+  ipa?: string;
+  meaningVi: string;
+  example?: string;
+}
+
+export interface LessonImportTopic {
+  title: string;
+  words: LessonImportWord[];
+}
+
+export interface LessonImportPayload {
+  title: string;
+  topics: LessonImportTopic[];
+}
+
+export interface LessonContentPayload {
+  topics: LessonImportTopic[];
+}
+
+export interface LessonJsonFile extends LessonContentPayload {
+  title?: string;
+}
+
 export interface Topic {
   id: number;
   lessonId: number;

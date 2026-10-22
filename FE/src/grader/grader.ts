@@ -63,10 +63,7 @@ export class AnswerGrader {
   }
 
   async grade(context: GradingContext): Promise<GradeResult> {
-    // TODO: run through chain and return result or default WRONG
-    return {
-      correct: false,
-      gradedBy: 'EXACT',
-    };
+    const result = await this.chain.handle(context);
+    return result ?? { correct: false, gradedBy: 'EXACT' };
   }
 }

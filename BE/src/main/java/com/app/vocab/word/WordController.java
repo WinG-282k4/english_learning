@@ -32,6 +32,11 @@ public class WordController {
         return ResponseEntity.status(HttpStatus.CREATED).body(wordService.createWord(request));
     }
 
+    @PostMapping("/batch")
+    public ResponseEntity<List<WordDtos.View>> createWords(@Valid @RequestBody WordDtos.BatchCreate request) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(wordService.createWords(request));
+    }
+
     @PutMapping("/{id}")
     public ResponseEntity<WordDtos.View> updateWord(@PathVariable Long id, @Valid @RequestBody WordDtos.Create request) {
         return ResponseEntity.ok(wordService.updateWord(id, request));

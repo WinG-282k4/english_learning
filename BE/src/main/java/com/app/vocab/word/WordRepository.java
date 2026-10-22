@@ -6,12 +6,16 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface WordRepository extends JpaRepository<Word, Long> {
     List<Word> findByTopicIdOrderByOrderIndexAsc(Long topicId);
 
     long countByTopicId(Long topicId);
+
+    @Query("SELECT MAX(w.orderIndex) FROM Word w WHERE w.topic.id = :topicId")
+    Optional<Integer> findMaxOrderIndexByTopicId(@Param("topicId") Long topicId);
 
     long countByTopicLessonId(Long lessonId);
 

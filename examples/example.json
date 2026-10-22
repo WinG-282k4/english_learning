@@ -1,0 +1,50 @@
+{
+  "title": "Tiếng Anh cơ bản",
+  "topics": [
+    {
+      "title": "Động vật",
+      "words": [
+        {
+          "term": "cat",
+          "pos": "noun",
+          "ipa": "/kæt/",
+          "meaningVi": "con mèo",
+          "example": "The cat is sleeping."
+        },
+        {
+          "term": "dog",
+          "pos": "noun",
+          "ipa": "/dɒɡ/",
+          "meaningVi": "con chó",
+          "example": "The dog is playing in the garden."
+        },
+        {
+          "term": "bird",
+          "pos": "noun",
+          "ipa": "/bɜːd/",
+          "meaningVi": "con chim",
+          "example": "A bird is sitting in the tree."
+        }
+      ]
+    },
+    {
+      "title": "Hành động",
+      "words": [
+        {
+          "term": "learn",
+          "pos": "verb",
+          "ipa": "/lɜːn/",
+          "meaningVi": "học, tìm hiểu",
+          "example": "I learn English every day."
+        },
+        {
+          "term": "practice",
+          "pos": "verb",
+          "ipa": "/ˈpræk.tɪs/",
+          "meaningVi": "luyện tập, thực hành",
+          "example": "We practice speaking after class."
+        }
+      ]
+    }
+  ]
+}

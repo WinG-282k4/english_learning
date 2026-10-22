@@ -7,7 +7,7 @@ COPY FE/ ./
 RUN npm run build
 
 # Stage 2: Build Backend
-FROM maven:3.9.8-eclipse-temurin-21 AS backend-builder
+FROM maven:3.10.0-eclipse-temurin-25 AS backend-builder
 WORKDIR /app/be
 COPY BE/pom.xml ./
 RUN mvn dependency:go-offline -B
@@ -16,7 +16,7 @@ COPY --from=frontend-builder /app/fe/dist ./src/main/resources/static
 RUN mvn clean package -DskipTests
 
 # Stage 3: Runtime
-FROM eclipse-temurin:21-jre-alpine
+FROM eclipse-temurin:25-jre-alpine
 WORKDIR /app
 COPY --from=backend-builder /app/be/target/*.jar app.jar
 

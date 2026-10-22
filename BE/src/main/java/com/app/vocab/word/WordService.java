@@ -8,6 +8,8 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.server.ResponseStatusException;
 
 @Service
 public class WordService {
@@ -43,6 +45,26 @@ public class WordService {
         int order = request.orderIndex() != null ? request.orderIndex() : wordRepository.countByTopicId(topic.getId()) > 0 ? wordRepository.findByTopicIdOrderByOrderIndexAsc(topic.getId()).getLast().getOrderIndex() + 1 : 0;
         Word word = Word.builder().topic(topic).term(request.term().trim()).termNorm(normalize(request.term())).pos(clean(request.pos())).ipa(clean(request.ipa())).meaningVi(request.meaningVi().trim()).example(clean(request.example())).orderIndex(order).build();
         return toView(wordRepository.save(word));
+    }
+
+    @Transactional
+    public List<WordDtos.View> createWords(WordDtos.BatchCreate request) {
+        Topic topic = topicRepository.findById(request.topicId())
+            .orElseThrow(() -> new jakarta.persistence.EntityNotFoundException("Topic not found: " + request.topicId()));
+        long currentCount = wordRepository.countByTopicId(topic.getId());
+        int maximum = appProperties.getRules().getMaxWordsPerTopic();
+        if (currentCount + request.words().size() > maximum) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Topic chỉ chứa tối đa " + maximum + " từ.");
+        }
+        int order = wordRepository.findMaxOrderIndexByTopicId(topic.getId()).orElse(-1) + 1;
+        int[] nextOrder = {order};
+        List<Word> newWords = request.words().stream().map(item -> {
+            String term = item.term().trim();
+            return Word.builder().topic(topic).term(term).termNorm(normalize(term)).pos(clean(item.pos()))
+                .ipa(clean(item.ipa())).meaningVi(item.meaningVi().trim()).example(clean(item.example()))
+                .orderIndex(nextOrder[0]++).build();
+        }).toList();
+        return wordRepository.saveAll(newWords).stream().map(this::toView).toList();
     }
 
     public WordDtos.View updateWord(Long id, WordDtos.Create request) {
