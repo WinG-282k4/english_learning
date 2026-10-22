@@ -15,7 +15,17 @@ public class StatService {
     }
 
     public List<StatDtos.WrongWordView> getFrequentlyWrongWords(int limit) {
-        // TODO: query word_stats where wrongCount > 0 ordered by wrongCount desc
-        return null;
+        return wordStatRepository.findTopWrongWords(PageRequest.of(0, limit))
+                .stream()
+                .map(ws -> new StatDtos.WrongWordView(
+                        ws.getTermNorm(),
+                        ws.getWrongCount(),
+                        ws.getCorrectCount(),
+                        ws.getCorrectSinceWrong(),
+                        ws.isActiveWrong(),
+                        ws.getLastWrongAt()
+                ))
+                .toList();
     }
 }
+

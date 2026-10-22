@@ -1,7 +1,9 @@
 package com.app.vocab.topic;
 
-import com.app.vocab.config.AppProperties;
 import com.app.vocab.lesson.LessonRepository;
+import com.app.vocab.word.WordRepository;
+import jakarta.persistence.EntityNotFoundException;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,37 +13,47 @@ public class TopicService {
 
     private final TopicRepository topicRepository;
     private final LessonRepository lessonRepository;
-    private final AppProperties appProperties;
+    private final WordRepository wordRepository;
 
     public TopicService(TopicRepository topicRepository,
                         LessonRepository lessonRepository,
-                        AppProperties appProperties) {
+                        WordRepository wordRepository) {
         this.topicRepository = topicRepository;
         this.lessonRepository = lessonRepository;
-        this.appProperties = appProperties;
+        this.wordRepository = wordRepository;
     }
 
     public List<TopicDtos.View> getTopicsByLesson(Long lessonId) {
-        // TODO: implement get topics by lesson
-        return null;
+        if (!lessonRepository.existsById(lessonId)) throw new EntityNotFoundException("Lesson not found: " + lessonId);
+        return topicRepository.findByLessonIdOrderByOrderIndexAsc(lessonId).stream().map(this::toView).toList();
     }
 
     public TopicDtos.View getTopicById(Long id) {
-        // TODO: implement get topic by id
-        return null;
+        return toView(findTopic(id));
     }
 
     public TopicDtos.View createTopic(TopicDtos.Create request) {
-        // TODO: implement create topic
-        return null;
+        var lesson = lessonRepository.findById(request.lessonId()).orElseThrow(() -> new EntityNotFoundException("Lesson not found: " + request.lessonId()));
+        int order = request.orderIndex() != null ? request.orderIndex() : topicRepository.findMaxOrderIndexByLessonId(request.lessonId()).orElse(-1) + 1;
+        return toView(topicRepository.save(Topic.builder().lesson(lesson).title(request.title().trim()).orderIndex(order).build()));
     }
 
     public TopicDtos.View updateTopic(Long id, TopicDtos.Create request) {
-        // TODO: implement update topic
-        return null;
+        Topic topic = findTopic(id);
+        var lesson = lessonRepository.findById(request.lessonId()).orElseThrow(() -> new EntityNotFoundException("Lesson not found: " + request.lessonId()));
+        topic.setLesson(lesson);
+        topic.setTitle(request.title().trim());
+        if (request.orderIndex() != null) topic.setOrderIndex(request.orderIndex());
+        return toView(topicRepository.save(topic));
     }
 
+    @Transactional
     public void deleteTopic(Long id) {
-        // TODO: implement delete topic
+        findTopic(id);
+        wordRepository.deleteByTopicId(id);
+        topicRepository.deleteById(id);
     }
+
+    private Topic findTopic(Long id) { return topicRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Topic not found: " + id)); }
+    private TopicDtos.View toView(Topic topic) { return new TopicDtos.View(topic.getId(), topic.getLesson().getId(), topic.getTitle(), topic.getOrderIndex(), (int) wordRepository.countByTopicId(topic.getId())); }
 }
